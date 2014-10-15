@@ -1,5 +1,5 @@
-   # Lista estructurada de requisitos
-   ##Filmafinity
+# Lista estructurada de requisitos
+##Filmafinity
    * Podrá votar películas
    * Podrá escribir críticas sobre cualquier película
    * Podrá acceder a sus almas gemelas (personas más afines en sus gustos de cine)
