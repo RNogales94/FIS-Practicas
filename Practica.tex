@@ -1,5 +1,8 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{enumitem}
+
 
 \title{Gestión de una Web de cine}
 \author{Rafael Nogales Vaquero
@@ -13,7 +16,6 @@
 \maketitle
 
 \section{Objetivos}
-
 Este proyecto tiene como principal objetivo desarrollar un entorno web para gente con gran interés en el mundo del cine.
 Estos aficionados podrán consultar on-line, en todo momento, las puntuaciones sobre cualquier película, información
 detallada sobre estrenos y la posibilidad de comprar cualquier DVD que esté en el mercado.
@@ -30,6 +32,73 @@ conveniente. Además de crearse listas de películas (las favoritas, las que qui
 \section{Requisitos}
     \subsection{Funcionales}
     \subsection{No Funcionales}
+    \begin{itemize}
+    \item Usabilidad
+        \begin{enumerate}[label=\bfseries RN- \arabic*:]
+        \item El sistema está pensado para personas que no tienen experiencia puesto que la interfaz de la misma es bastante sencilla.
+        \item Se indicará al usuario en portada acerca del conjunto de peliculas que se encuentra en cartelera actualmente además de las recomendaciones correspondientes y peliculas que saldrán proximamente en la cartelera.
+        \item El sistema tal y como esta diseñado dará instrucciones acerca de lo que el usuario es capaz de hacer en cada momento.
+        \item Se proporcionará ayudas al usuario, el usuario puede avisar de errores en la información proporcionada por las peliculas, o bien sean errores que se han producido en la web, el empleado correspondiente se encargará del análisis de dichos avisos. 
+        \end{enumerate}
+    \item Fiabilidad
+        \begin{enumerate}[label=\bfseries RN- \arabic*:]
+        \setcounter{enumi}{4}
+        \item El sistema deberá realizar copias de seguridad cada cierto tiempo, debido a los posibles errores o caidas del sistema.
+        \item El sistema proporcionará un aviso de la incidendia al usuario en caso de no poder volver a restaurar el sistema.
+        \item Se deberán de tener varios servidores interconectados atendiendo a los usuarios, en caso de error en alguno de los servidores la carga de usuarios se dividirá en el resto de servidores funcionales.
+        \item El sistema deberá asegurar el estado de los datos una vez recupere un buen estado de funcionalidad.
+        \item El sistema estará regido por una jerarquia de empleados que se encargaran de la seguridad de la misma, además de esto a los usuarios se les pedirá información relevante para facilitar su identificación y evitar cuentas de robots automaticos. 
+        \end{enumerate}
+    \item Rendimiento
+        \begin{enumerate}[label=\bfseries RN- \arabic*:]
+        \setcounter{enumi}{9}
+        \item Se separarán las capacidades de un usuario de la compra de DVD/BlueRay, es decir, se usará una interfaz de compra de películas diferente al entorno usual del usuario.
+        \item La base de datos tendrá que estar preparada para alojar tantos usuarios como sea necesario, alrededor de 100000 usuarios registrados en un inicio más esto se deberá incrementar posterirormente.
+        \item Cuando el usuario compra una película no deberá encontrarse ningun estado de indeterminación donde este no sepa la consecuencia de su acción.
+        \end{enumerate}
+    \item Soporte
+        \begin{enumerate}[label=\bfseries RN- \arabic*:]
+        \setcounter{enumi}{12}
+        \item El sistema se encontrará mantenido por un grupo de empleados organizados de manera jerarquica y repartidos por secciones, estos se encontrarán dirigidos por un director de proyecto o administrador del sistema.
+        \item Será posible implementar la web para que tenga soporte en dispositivos moviles y tablets del mercado.
+        \end{enumerate}
+    \item Restricciones de implementeción
+        \begin{enumerate}[label=\bfseries RN- \arabic*:]
+        \setcounter{enumi}{14}
+        \item El sistema puesto al ser una web necesitará de los lenguajes siguientes:
+            \begin{itemize}
+            \item HTML5
+            \item CSS3
+            \item PHP
+            \item MySQL
+            \end{itemize}
+        \item El sistema también podrá ser implementado por la siguiente combinación:
+            \begin{itemize}
+            \item HTML5
+            \item CSS3
+            \item Ruby on Rails
+            \item MySQL o SQLite3
+            \end{itemize}
+        \end{enumerate}
+    \item Requisitos físicos
+        \begin{enumerate}[label=\bfseries RN- \arabic*:]
+        \setcounter{enumi}{16}
+        \item El sistema deberá tratar los datos de usuario en tiempo real, además de adaptar las peliculas para cada uno de los usuarios, y proporcionarles un metodo cómodo de compra.
+        \item Los datos del sistema de base de datos usados estará actualizado en todo momento por posibles peticiones a la misma.
+        \end{enumerate}
+    \item Operación
+        \begin{enumerate}[label=\bfseries RN- \arabic*:]
+        \setcounter{enumi}{18}
+        \item El sistema estará operado por un equipo de empleados mientres este ofrezca servicio.
+        \end{enumerate}
+    \item Legales
+        \begin{enumerate}[label=\bfseries RN- \arabic*:]
+        \setcounter{enumi}{19}
+        \item El sistema estará protegido por derechos de autor y Copyright.
+        \item El sistema no proporcionará datos de los usuarios a ninguna otra entidad.
+        \item El sistema ofrece una compra segura y dentro de la legalidad vigente con periodos de reclamación correspondiente.
+        \end{enumerate}
+    \end{itemize}
     \subsection{Informacion}
 
 
