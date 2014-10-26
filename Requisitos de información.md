@@ -3,12 +3,14 @@ Se incluye la información relevante para el cliente que debe gestionar y almace
 Son todos aquellos datos que vamos a almacenar en la Base de Datos.
 
 
+
 RI-1 Películas a valorar
 Descripción de cada una de las películas disponibles en la página web.
 
 -Contenido: nombre de la película, duración, sinopsis, país, director, reparto, fecha de estreno, género, tráiler, imágenes, críticas de los usuarios, puntuación de los usuarios, críticas de medios relevantes, premios, productora, guión, música, fotografía y cines.
-  
--Requisitos asociados:
+
+-Requisitos asociados: RF-1,2,3,4,5.1,5.2,7,8,9,10,11,12, RNF-2,17,18.
+
 
 
 RI-2 Películas en venta (DVD)
@@ -17,7 +19,8 @@ Descripción de cada una de las películas disponibles para su venta en DVD.
 -Contenido: nombre de la película, duración, sinopsis, país, director, reparto, fecha de estreno, género, tráiler, imágenes, críticas de los usuarios, puntuación de los usuarios, críticas de medios relevantes, premios, productora, guión, música, fotografía, cines, enlace a la página web donde está disponible y precio.
 Igual que el de películas a valorar, pero se añadirá, para cada copia, el precio.
 
--Requisitos asociados:
+-Requisitos asociados: RF-1,2,3,4,5,7,8,9,10,11,12, RNF-2,10,12,17,18,22.
+
 
 
 RI-3 Peticiones por parte de los usuarios 
@@ -25,7 +28,8 @@ Lista de películas que aún no están dentro de la plataforma. Son aquellas a e
 
 -Contenido: nombre de la película y sinopsis.
 
--Requisitos asociados:
+-Requisitos asociados: 5.3.
+
 
 
 RI-4 Cuentas de usuarios
@@ -35,7 +39,8 @@ El usuario sin registrar solo accede a una parte parcial de la información y su
 
 -Contenido: Nombre completo, e-mail, fecha de nacimiento, sexo, ciudad, país, nombre de usuario, contraseña y lista de amigos.
 
--Requisitos asociados:
+-Requisitos asociados: RF-5.1,6,9,10,11, RNF-3,4,6,9,11,17,18,21.
+
 
 
 RI-5 Próximos estrenos cartelera 
@@ -44,7 +49,8 @@ No podremos votarlas ni escribir comentarios hasta que se estrenen en algún pa�
 
 -Contenido: nombre película, fecha estreno, año, duración, reparto, país, director, guión, música, fotografía, productora, género y sinopsis.
 
--Requisitos asociados:
+-Requisitos asociados: RF-1,2,3,4,5.3, RNF-2,18.
+
 
 
 RI-6 Noticias sobre cine
@@ -52,4 +58,4 @@ Información de las últimas noticias publicadas sobre determinadas películas, 
 
 -Contenido: nombre de la película, actores, productora, país, premios e información sobre lo ocurrido.
 
--Requisitos asociados:
+-Requisitos asociados: RF-5, RNF-18.
