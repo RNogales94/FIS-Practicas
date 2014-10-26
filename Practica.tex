@@ -29,6 +29,7 @@ por parte de todos los internautas que la han puntuado.
 Otras de las grandes ventajas de nuestra web es que podrá escribir críticas sobre cualquier película y darle la puntuación
 conveniente. Además de crearse listas de películas (las favoritas, las que quiere ver, etc.).
 \section{Descripción de los implicados}
+
 \section{Requisitos}
     \subsection{Funcionales}
 	\begin{itemize}
@@ -37,11 +38,11 @@ conveniente. Además de crearse listas de películas (las favoritas, las que qui
 		\begin{enumerate}[label=\bfseries RF- \arabic*:]
 		\item El sistema llevará un control de todas las películas estrenadas y por estrenar que haya en la Base de Datos (BD).
 		\item Se permitirá hacer críticas a las películas.
-			\begin{description}
-			\item[-]Necesitamos una lista de críticas para cada película.
-			\item[-]Cada película tendrá asociada una nota media.
-			\item[-]El historico de la nota media se almacenará tambien en la base de datos para consultar la popularidad de la pelicula.
-			\end{description}
+			\begin{enumerate}[label=\bfseries 2.\arabic*:]
+				\item Necesitamos una lista de críticas para cada película.
+				\item Cada película tendrá asociada una nota media.
+				\item El historico de la nota media se almacenará tambien en la base de datos para consultar la popularidad de la pelicula.
+			\end{enumerate}
 		\item Los administradores podrán añadir peliculas una vez se sepa su fecha de estreno.
 		\item Los usuario pueden ver todos los datos de una pelicula.
 		\end{enumerate}
@@ -52,21 +53,20 @@ conveniente. Además de crearse listas de películas (las favoritas, las que qui
 		\setcounter{enumi}{4}
 		\item \textbf{Tipos de Usuarios:}
 			\begin{description}
-				\item[Usuario] Puede crear criticas sobre peliculas estrenadas y eliminarlas (pero solo las que ha escrito el mismo).
-				\item[Moderadores] Pueden eliminar criticas de otros usuarios y banear temporalmente o indefinidamente a usuarios.
-				\item[Administradores] Pueden añadir peliculas.
+				\item[5.1 Usuario] Puede crear criticas sobre peliculas estrenadas y eliminarlas (pero solo las que ha escrito el mismo).
+				\item[5.2 Moderadores] Pueden eliminar criticas de otros usuarios y banear temporalmente o indefinidamente a usuarios.
+				\item[5.3 Administradores] Pueden añadir peliculas.
 			\end{description}
 		\item Un usuario tiene:
 			\begin{description}
-				\item[Perfil] Compuesto por nombre, correo, edad, nacionalidad.
-				\item[Puntuacion] Se establece en base a las notas medias que otros usuarios dan a sus criticas en peliculas. (Puede ser negativa)
-				\item[Amigos] Cada usuario puede enviar peticiones de amistad al resto de usuarios y si la aceptan pasan a ser amigos y poder sugeririse peliculas unos a otros.
-				\item[Almas Gemelas] Son otros usuarios con un perfil de gustos similar al tuyo que el sistema te asocia automaticamente con la finalidad de enviarte automaticamente sugerencias de peliculas que les han gustado a tus almas gemelas.
+				\item[6.1 Perfil] Compuesto por nombre, correo, edad, nacionalidad.
+				\item[6.2 Puntuacion] Se establece en base a las notas medias que otros usuarios dan a sus criticas en peliculas. (Puede ser negativa)
+				\item[6.3 Amigos] Cada usuario puede enviar peticiones de amistad al resto de usuarios y si la aceptan pasan a ser amigos y poder sugeririse peliculas unos a otros.
+				\item[6.4 Almas Gemelas] Son otros usuarios con un perfil de gustos similar al tuyo que el sistema te asocia automaticamente con la finalidad de enviarte automaticamente sugerencias de peliculas que les han gustado a tus almas gemelas.
 				\\Las almas gemelas se pueden encontrar utilizando un algoritmo de clasificacion tipo KNN.				
 			\end{description}
 		\end{enumerate}
 	
-		
 	\item \textbf{Criticas}
 		\begin{enumerate}[label=\bfseries RF- \arabic*:]
 		\setcounter{enumi}{6}
