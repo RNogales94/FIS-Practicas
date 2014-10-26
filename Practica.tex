@@ -31,16 +31,66 @@ conveniente. Además de crearse listas de películas (las favoritas, las que qui
 \section{Descripción de los implicados}
 \section{Requisitos}
     \subsection{Funcionales}
+	\begin{itemize}
+	
+	\item \textbf{Gestion de Peliculas}
+		\begin{enumerate}[label=\bfseries RF- \arabic*:]
+		\item El sistema llevará un control de todas las películas estrenadas y por estrenar que haya en la Base de Datos (BD).
+		\item Se permitirá hacer críticas a las películas.
+			\begin{description}
+			\item[-]Necesitamos una lista de críticas para cada película.
+			\item[-]Cada película tendrá asociada una nota media.
+			\item[-]El historico de la nota media se almacenará tambien en la base de datos para consultar la popularidad de la pelicula.
+			\end{description}
+		\item Los administradores podrán añadir peliculas una vez se sepa su fecha de estreno.
+		\item Los usuario pueden ver todos los datos de una pelicula.
+		\end{enumerate}
+		
+		
+	\item \textbf{Gestion de Usuarios}
+		\begin{enumerate}[label=\bfseries RF- \arabic*:]
+		\setcounter{enumi}{4}
+		\item \textbf{Tipos de Usuarios:}
+			\begin{description}
+				\item[Usuario] Puede crear criticas sobre peliculas estrenadas y eliminarlas (pero solo las que ha escrito el mismo).
+				\item[Moderadores] Pueden eliminar criticas de otros usuarios y banear temporalmente o indefinidamente a usuarios.
+				\item[Administradores] Pueden añadir peliculas.
+			\end{description}
+		\item Un usuario tiene:
+			\begin{description}
+				\item[Perfil] Compuesto por nombre, correo, edad, nacionalidad.
+				\item[Puntuacion] Se establece en base a las notas medias que otros usuarios dan a sus criticas en peliculas. (Puede ser negativa)
+				\item[Amigos] Cada usuario puede enviar peticiones de amistad al resto de usuarios y si la aceptan pasan a ser amigos y poder sugeririse peliculas unos a otros.
+				\item[Almas Gemelas] Son otros usuarios con un perfil de gustos similar al tuyo que el sistema te asocia automaticamente con la finalidad de enviarte automaticamente sugerencias de peliculas que les han gustado a tus almas gemelas.
+				\\Las almas gemelas se pueden encontrar utilizando un algoritmo de clasificacion tipo KNN.				
+			\end{description}
+		\end{enumerate}
+	
+		
+	\item \textbf{Criticas}
+		\begin{enumerate}[label=\bfseries RF- \arabic*:]
+		\setcounter{enumi}{6}
+		\item Cada critica esta escrita por un unico autor.
+		\item Cada critica tiene una nota media.
+		\item Todos los usuarios pueden votar cada critica una unica vez.
+		\item Un usuario puede cambiar su voto sobre una critica.
+		\item Un usuario puede comentar una critica.
+		\item Un comentario en una critica puede ser comentado por otros usuarios.
+		\end{enumerate}
+	\end{itemize}	
+	
+	    
     \subsection{No Funcionales}
     \begin{itemize}
-    \item Usabilidad
+    \item \textbf{Usabilidad:}
         \begin{enumerate}[label=\bfseries RN- \arabic*:]
         \item El sistema está pensado para personas que no tienen experiencia puesto que la interfaz de la misma es bastante sencilla.
         \item Se indicará al usuario en portada acerca del conjunto de peliculas que se encuentra en cartelera actualmente además de las recomendaciones correspondientes y peliculas que saldrán proximamente en la cartelera.
         \item El sistema tal y como esta diseñado dará instrucciones acerca de lo que el usuario es capaz de hacer en cada momento.
         \item Se proporcionará ayudas al usuario, el usuario puede avisar de errores en la información proporcionada por las peliculas, o bien sean errores que se han producido en la web, el empleado correspondiente se encargará del análisis de dichos avisos. 
         \end{enumerate}
-    \item Fiabilidad
+        
+    \item \textbf{Fiabilidad:}
         \begin{enumerate}[label=\bfseries RN- \arabic*:]
         \setcounter{enumi}{4}
         \item El sistema deberá realizar copias de seguridad cada cierto tiempo, debido a los posibles errores o caidas del sistema.
@@ -49,49 +99,55 @@ conveniente. Además de crearse listas de películas (las favoritas, las que qui
         \item El sistema deberá asegurar el estado de los datos una vez recupere un buen estado de funcionalidad.
         \item El sistema estará regido por una jerarquia de empleados que se encargaran de la seguridad de la misma, además de esto a los usuarios se les pedirá información relevante para facilitar su identificación y evitar cuentas de robots automaticos. 
         \end{enumerate}
-    \item Rendimiento
+        
+    \item \textbf{Rendimiento:}
         \begin{enumerate}[label=\bfseries RN- \arabic*:]
         \setcounter{enumi}{9}
         \item Se separarán las capacidades de un usuario de la compra de DVD/BlueRay, es decir, se usará una interfaz de compra de películas diferente al entorno usual del usuario.
         \item La base de datos tendrá que estar preparada para alojar tantos usuarios como sea necesario, alrededor de 100000 usuarios registrados en un inicio más esto se deberá incrementar posterirormente.
         \item Cuando el usuario compra una película no deberá encontrarse ningun estado de indeterminación donde este no sepa la consecuencia de su acción.
         \end{enumerate}
-    \item Soporte
+        
+    \item \textbf{Soporte:}
         \begin{enumerate}[label=\bfseries RN- \arabic*:]
         \setcounter{enumi}{12}
         \item El sistema se encontrará mantenido por un grupo de empleados organizados de manera jerarquica y repartidos por secciones, estos se encontrarán dirigidos por un director de proyecto o administrador del sistema.
         \item Será posible implementar la web para que tenga soporte en dispositivos moviles y tablets del mercado.
         \end{enumerate}
-    \item Restricciones de implementeción
+        
+    \item \textbf{Restricciones de implementeción:}
         \begin{enumerate}[label=\bfseries RN- \arabic*:]
         \setcounter{enumi}{14}
         \item El sistema puesto al ser una web necesitará de los lenguajes siguientes:
-            \begin{itemize}
-            \item HTML5
-            \item CSS3
-            \item PHP
-            \item MySQL
-            \end{itemize}
+            \begin{description}
+            \item[-] HTML5
+            \item[-] CSS3
+            \item[-] PHP
+            \item[-] MySQL
+            \end{description}
         \item El sistema también podrá ser implementado por la siguiente combinación:
-            \begin{itemize}
-            \item HTML5
-            \item CSS3
-            \item Ruby on Rails
-            \item MySQL o SQLite3
-            \end{itemize}
+            \begin{description}
+            \item[-] HTML5
+            \item[-] CSS3
+            \item[-] Ruby on Rails
+            \item[-] MySQL o SQLite3
+            \end{description}
         \end{enumerate}
-    \item Requisitos físicos
+        
+    \item \textbf{Requisitos físicos:}
         \begin{enumerate}[label=\bfseries RN- \arabic*:]
         \setcounter{enumi}{16}
         \item El sistema deberá tratar los datos de usuario en tiempo real, además de adaptar las peliculas para cada uno de los usuarios, y proporcionarles un metodo cómodo de compra.
         \item Los datos del sistema de base de datos usados estará actualizado en todo momento por posibles peticiones a la misma.
         \end{enumerate}
-    \item Operación
+        
+    \item \textbf{Operación:}
         \begin{enumerate}[label=\bfseries RN- \arabic*:]
         \setcounter{enumi}{18}
         \item El sistema estará operado por un equipo de empleados mientres este ofrezca servicio.
         \end{enumerate}
-    \item Legales
+        
+    \item \textbf{Legales:}
         \begin{enumerate}[label=\bfseries RN- \arabic*:]
         \setcounter{enumi}{19}
         \item El sistema estará protegido por derechos de autor y Copyright.
