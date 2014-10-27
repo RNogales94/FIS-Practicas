@@ -1,6 +1,6 @@
 FIS-Practica1
 =============
-Ya están arregladas las tablas de joserra que salian con huecos blancos. Falta mirar las faltas de ortografía solo.
+Ya están arregladas las tablas de joserra que salian con huecos blancos.
 
 Prefiero subir una versión de pdf para que podais verla antes de subirlo a github:
 http://www.mediafire.com/view/v2z25pplc9zd5qn/Glosario_de_T_rminos.pdf
