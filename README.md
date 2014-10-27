@@ -1,4 +1,4 @@
 FIS-Practica1
 =============
-Leed la práctica cuando podais. hay que repasar las faltas de ortografia esta noche lo haré.
+Ya están arregladas las tablas de joserra que salian con huecos blancos. Falta mirar las faltas de ortografía solo.
 
