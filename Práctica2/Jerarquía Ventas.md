@@ -1,4 +1,4 @@
---Gestión de Ventas
+GESTIÓN DE VENTAS
 
 -Descripción:
 	Escenarios asociados con la gestión de ventas de películas.
