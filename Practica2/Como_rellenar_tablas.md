@@ -1,6 +1,6 @@
 Como usar la tabla de Ejemplo:
 ==============================
-'''
+```
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
@@ -26,7 +26,7 @@ Autor              &              & Fecha    &     &   Versión  &\\
 \hline
 \end{tabular}
 \end{table}
-'''
+```
 
 * Para rellenar el nombre de caso de uso se rellena el {} del segundo multicolumn de dicha linea, y se modifica de CU-x la x por el número correspondiente.
 * Para rellenar Actores se rellena el {} del segundo multicolumn de dicha linea.
