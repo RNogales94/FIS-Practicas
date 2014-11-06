@@ -35,6 +35,6 @@ Autor              &              & Fecha    &     &   Versión  &\\
 * Para rellenar Postcondición se rellena el {} del segundo multicolumn de dicha linea.
 * Para rellenar el Proposito se rellena el multicolumn justo abajo.
 * Descripción igual que Proposito.
-* Para rellenar Autor justo despues del &, al igual con Fechar y Versión.
+* Para rellenar Autor justo despues del &, al igual con Fecha y Versión.
 
 Si no entendeis algo preguntais :P.
