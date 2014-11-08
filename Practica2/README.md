@@ -23,7 +23,7 @@ Lothar:
 
 Elena:
 -----------
-* Realizar Jerarquia de caso de uso de venta.
+* ~~Realizar Jerarquia de caso de uso de venta.~~
 * Realizar Diagrama de caso de uso de gestión de venta.
 * Descripción de los casos de uso correspondientes.
 
