@@ -19,7 +19,7 @@ Lothar:
 -----------
 * ~~Realizar Jerarquia de caso de uso de socios.~~
 * ~~Realizar Diagrama de caso de uso de gestión de socios.~~
-* Descripción de los casos de uso correspondientes.
+* ~~Descripción de los casos de uso correspondientes.~~
 
 Elena:
 -----------
