@@ -6,7 +6,8 @@ Descripción:
 * Escenarios asociados con el mantenimiento de las fichas de las películas.
 Casos de uso:
 -----------
-* Comparar películas, Escribir crítica,Añadir imágenes, vídeos, etc de películas,Valorar películas,Listar películas valoradas, Añadir películas,Ver información,Modificar datos de la película, Sugerencias de películas a añadir,Borrar películas .
+* Comparar películas, Escribir crítica,Añadir imágenes, vídeos, etc de películas,Valorar películas,Listar películas valoradas, Añadir películas,Ver información,Modificar datos de la película, Sugerencias de películas a añadir,Borrar películas.
+
 Actores:
 -----------
 * Usuario, Sistema, Cliente
