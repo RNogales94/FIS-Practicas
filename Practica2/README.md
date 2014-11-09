@@ -5,9 +5,9 @@ Cada uno tiene que realizar lo mencionado a continuación:
 
 Jose Ramón:
 -----------
-* Realizar Jerarquia de caso de uso de peliculas.
+* ~~Realizar Jerarquia de caso de uso de peliculas.~~
 * Realizar Diagrama de caso de uso de gestión de peliculas.
-* Descripción de los casos de uso correspondientes.
+* ~~Descripción de los casos de uso correspondientes.~~
 
 Rafa:
 -----------
