@@ -1,3 +1,15 @@
+Gerarquía de gestión de películas
+================================
+
+Descripción:
+Escenarios asociados con el mantenimiento de las películas disponibles.
+Casos de uso:
+Alta de Película, Baja de Película, Modificar Película, Consultar Películas, Estado de Película,
+Listar Películas Alquiladas .
+Actores:
+Proveedor, Empleado
+
+
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
