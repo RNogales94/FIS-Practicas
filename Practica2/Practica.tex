@@ -5,6 +5,7 @@
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage{multirow, array}
+\usepackage[spanish,activeacute]{babel}
 
 
 \title{Práctica 2: Gestión de una Web de cine}
@@ -26,6 +27,7 @@
 	\item[Casos de Uso]:\\ Registro(Alta usuario), Consultar películas, Modificar información de usuario, Consultar información de Usuario, Consultar cuenta de Usuario, Eliminar cuenta de Usuario, Acceder a lista de Almas Gemelas, Comprar Película, Consulta a Empleado/Administrador, Identificar Usuario, Actualizar Películas, Añadir/borrar Películas, Control de comentarios/críticas, Moderación de usuarios, Listar usuarios Baneados del sistema, Listar usuarios colaboradores, Banear usuarios.
 	\item[Actores]:\\ Cliente, Usuario, Administrador, Sistema.
 	\end{description}
+	
 \subsection*{Gestión de Almas Gemelas}
 	\begin{description}
 	\item[Descripción]:\\ Escenarios asociados con la gestión y formación de almas gemelas.
@@ -41,12 +43,14 @@
 
 	\item[Actores]:\\ Usuario, Sistema, Cliente.
 	\end{description}
+	
 \subsection*{Gestión de Ventas}
 	\begin{description}
 	\item[Descripción]:\\ Escenarios asociados con la gestión de ventas de películas.
 	\item[Casos de Uso]:\\ Comprar Película, Reservar Película, Identificar Socio, Disponibilidad de Películas, Pago a Cuenta, Pago en Metálico, Pago con Tarjeta.
 	\item[Actores]:\\ Usuario, Administrador.
 	\end{description}
+	
 \section{Diagrama de paquetes}
 	\begin{figure}[h]
 		\begin{center}
@@ -55,6 +59,7 @@
  	 \end{figure}
 
 \pagebreak
+
 \section{Diagrama de casos de uso}
 \subsection*{Gestión de Usuarios}
 		\begin{center}
@@ -63,15 +68,75 @@
    		
 \subsection*{Gestión de Almas Gemelas}
 		\begin{center}
-		
    			\includegraphics[scale=0.65]{GestiondeAlmasGemelas.png}
    		\end{center}	
 
 \section{Descripción básica de casos de uso}
+%Tablas de Casos de uso:
+
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Registro(Alta usuario)} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Asociación de Almas Gemelas}} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario, Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{El usuario acaba de registrarse por primera vez.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Asociar unas almas gemelas iniciales al cliente recien registrado.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El cliente se registra en el sistema y automaticamente se le asocian unas 
+almas gemelas inicales basandonos en los gustos del resto de usuarios del sistema, se da un mayor peso a los gustos de usuarios en función de tener la misma nacionalidad, el mismo sexo y una edad cercana a la del cliente.}                                        \\
+\hline
+Autor              &     Rafael Nogales         & Fecha    &  10/11/14   &   Versión  & 1\\     
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Actualización de lista de Almas Gemelas}} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario, Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{El usuario estaba en lista de espera para actualizar su lista de Almas Gelemas.
+Para entrar en la lista de espera basta con haber puntuado $m$ peliculas con $m > $ \textit{umbral de actualización de Almas Gemelas}.}   \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{El usuario se saca de la lista de espera para actualizar peliculas (y su contador $m$ se pone a cero).}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Conseguir que el usuario tenga asociadas unas Almas Gemelas 
+cada vez más afines a sus gustos.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Cuando puntuamos una película automaticamente estamos dando información sobre nuestros gustos y el sistema busca entre la lista de usuarios a aquellos que se parecen más a tí en función de tus gustos por lo que la lista se va mejorando con cada puntuación.
+\linebreak \linebreak
+\textit{Nota: Como el proceso de busqueda de Almas Gemelas es relativamente costoso computacionalmente se puede hacer que el sistema actualice tu lista a la n-esima vez que puntues una película, dónde n es el  ``umbral de actualización de Almas Gemelas``, el cual puede ser inversamente proporcional al cuadrado del número de usuarios del sistema y directamente proporcional a la carga de trabajo del sistema en cada momento, para que de esa forma el sistema esté siempre trabajando pero sea muy dificil que se colapse.}}                                        \\
+\hline
+Autor              &     Rafael Nogales         & Fecha    &  10/11/14   &   Versión  & 1\\     
+\hline
+\end{tabular}
+\end{table}
+
+\clearpage
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Registro(Alta usuario)}} & CU-x \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Cliente (Sin registro), Sistema}        \\
 \hline
@@ -89,15 +154,15 @@
 \hline
 \multicolumn{6}{|p{10cm}|}{El cliente se registra en el sistema para acceder a las opciones del sistema de la que solo pueden hacer uso los usuarios(con registro).}                                            \\
 \hline
-Autor              &     Lothar Soto         & Fecha    &  8/11/04   &   Versión  & 1\\     
+Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versión  & 1\\     
 \hline
 \end{tabular}
 \end{table}
-
+\clearpage
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Consultar Películas} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Consultar Películas}} & CU-x \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Cliente (Sin registro),Usuario(Con registro) , Sistema}        \\
 \hline
@@ -115,14 +180,14 @@ Autor              &     Lothar Soto         & Fecha    &  8/11/04   &   Versió
 \hline
 \multicolumn{6}{|p{10cm}|}{Permite a los clientes, usuarios acceder a informcación acerca de la película buscada.}                                            \\
 \hline
-Autor              &     Lothar Soto         & Fecha    &  8/11/04   &   Versión  & 1\\     
+Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versión  & 1\\     
 \hline
 \end{tabular}
 \end{table}
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Modificar información de Usuario} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Modificar información de Usuario}} & CU-x \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario (Con registro), Sistema}        \\
 \hline
@@ -140,14 +205,14 @@ Autor              &     Lothar Soto         & Fecha    &  8/11/04   &   Versió
 \hline
 \multicolumn{6}{|p{10cm}|}{El usuario modifica su información de cuenta como el Correo, Contraseaña...}                                            \\
 \hline
-Autor              &     Lothar Soto         & Fecha    &  8/11/04   &   Versión  & 1.0\\     
+Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versión  & 1.0\\     
 \hline
 \end{tabular}
 \end{table}
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Consultar información de Usuario} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Consultar información de Usuario}} & CU-x \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario (Con registro), Sistema}        \\
 \hline
@@ -165,14 +230,14 @@ Autor              &     Lothar Soto         & Fecha    &  8/11/04   &   Versió
 \hline
 \multicolumn{6}{|p{10cm}|}{El usuario consulta su información de cuenta como el estado,gustos...}                                            \\
 \hline
-Autor              &     Lothar Soto         & Fecha    &  8/11/04   &   Versión  & 1.0\\     
+Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versión  & 1.0\\     
 \hline
 \end{tabular}
 \end{table}
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Consultar cuenta de Usuario} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Consultar cuenta de Usuario}} & CU-x \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario (Con registro), Sistema}        \\
 \hline
@@ -190,14 +255,16 @@ Autor              &     Lothar Soto         & Fecha    &  8/11/04   &   Versió
 \hline
 \multicolumn{6}{|p{10cm}|}{Permite a los usuarios consultar sus datos de cuenta en caso de olvido como el Correo, o contraseña(Este último requiere confirmación).}                                            \\
 \hline
-Autor             &     Lothar Soto          & Fecha    &  8/11/04   &   Versión  &1.0\\     
+Autor             &     Lothar Soto          & Fecha    &  8/11/14   &   Versión  &1.0\\     
 \hline
 \end{tabular}
 \end{table}
+
+\clearpage
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Votar Películas} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Votar Películas}} & CU-x \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario(Con registro), Sistema}        \\
 \hline
@@ -213,16 +280,17 @@ Autor             &     Lothar Soto          & Fecha    &  8/11/04   &   Versió
 \hline
 \multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Permite al usuario votar una película positiva o negativamente.}                                            \\
+\multicolumn{6}{|p{10cm}|}{Permite al usuario votar una película positiva o negativamente.
+\linebreak \textit{Nota: Como consecuencia se entra en la lista de espera para actualizar lista de almas gemelas en el caso de que el usuario no estuviese ya en ella.}}                                            \\
 \hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  & 1.0\\     
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\     
 \hline
 \end{tabular}
 \end{table}
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Eliminar cuenta de Usuario} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Eliminar cuenta de Usuario}} & CU-x \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario(Con registro), Sistema}        \\
 \hline
@@ -240,14 +308,15 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  
 \hline
 \multicolumn{6}{|p{10cm}|}{Permite al usuario dejar de usar el sistema sin que quede información de este en el mismo.}                                            \\
 \hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  & 1.0\\     
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\     
 \hline
 \end{tabular}
 \end{table}
+
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Acceder a lista de almas gemelas} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Acceder a lista de almas gemelas}} & CU-x \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario(Con registro), Sistema}        \\
 \hline
@@ -265,7 +334,7 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  
 \hline
 \multicolumn{6}{|p{10cm}|}{Permite dar al usuario conocimiento de que personas comparten sus gustos y en parte están relacionadas con él.}                                            \\
 \hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  & 1.0\\    
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
 \hline
 \end{tabular}
 \end{table}
@@ -291,7 +360,7 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  
 \hline
 \multicolumn{6}{|p{10cm}|}{Permite a los usuarios identificarse en el sistema para posteriormente realizar distintas operaciones.}                                            \\
 \hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  & 1.0\\    
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
 \hline
 \end{tabular}
 \end{table}
@@ -317,7 +386,7 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  
 \hline
 \multicolumn{6}{|p{10cm}|}{El usuario podrá usar esta funcionalidad para contactar con un administrador para resolver algún tipo de incidencia o duda.}                                            \\
 \hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  & 1.0\\    
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
 \hline
 \end{tabular}
 \end{table}
@@ -343,7 +412,7 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  
 \hline
 \multicolumn{6}{|p{10cm}|}{Permite actualizar la lista de películas si anteriormente se ha añadido una o borrado.}                                            \\
 \hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  & 1.0\\    
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
 \hline
 \end{tabular}
 \end{table}
@@ -369,7 +438,7 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  
 \hline
 \multicolumn{6}{|p{10cm}|}{Permite a los empleados y administradores añadir películas al sistema y borrarlas dependiende de lo que interese.}                                            \\
 \hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  & 1.0\\    
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
 \hline
 \end{tabular}
 \end{table}
@@ -395,7 +464,7 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  
 \hline
 \multicolumn{6}{|p{10cm}|}{Permite a los empleados y administradores  manejar los comentarios (pueden eliminarlos).}                                            \\
 \hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  & 1.0\\    
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
 \hline
 \end{tabular}
 \end{table}
@@ -420,7 +489,7 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  
 \hline
 \multicolumn{6}{|p{10cm}|}{Permite a los empleados y administradores controlar a los usuarios usando un métodos de sanciones.}                                            \\
 \hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  & 1.0\\    
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
 \hline
 \end{tabular}
 \end{table}
@@ -446,11 +515,11 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  
 \hline
 \multicolumn{6}{|p{10cm}|}{Permite al administrador conocer los usuarios baneados.}                                            \\
 \hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  & 1.0\\    
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
 \hline
 \end{tabular}
 \end{table}
-
+\clearpage
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
@@ -472,7 +541,7 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  
 \hline
 \multicolumn{6}{|p{10cm}|}{Permite al administrador conocer a los usuarios colaboradores.}                                            \\
 \hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  & 1.0\\    
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
 \hline
 \end{tabular}
 \end{table}
@@ -498,7 +567,7 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  
 \hline
 \multicolumn{6}{|p{10cm}|}{Permite a los administradores y empleados denegar el acceso a un usuario conflictivo del sistema.}                                            \\
 \hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/04   &   Versión  & 1.0\\    
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
 \hline
 \end{tabular}
 \end{table}
