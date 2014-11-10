@@ -86,7 +86,7 @@
 	\begin{itemize}
 		\item Comprar Película. %Falta Caso de Uso
 		\item Disponibilidad de Películas. %
-		\item Identificar Socio.															%% Identificar Socio o Identificar Usuario??
+		\item Identificar Usuario.						
 		\item Pago a Cuenta.
 		\item Pago en Metálico.
 		\item Pago con Tarjeta.
@@ -157,6 +157,58 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Añadir imágenes,videos,etc de películas}} & CU-3 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario,Optativo}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Que la película esté añadida}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proporcionar al Usuario información visual sobre la película }                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Es añadir los posters, trailer, imágenes de rodaje de una película que esté añadida}                                            \\
+\hline
+Autor              &      Jose Ramón Trillo        & Fecha   & 9/11/2014     &   Versión  &1.0\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Añadir Películas}} & CU-6 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario,Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Que la película exista o se vaya a estrenar}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Mantener viva la web y actualizarla con películas nuevas}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Consiste en añadir la ficha de una película}                                            \\
+\hline
+Autor              &     Jose Ramón Trillo         & Fecha    &  9/11/2014   &   Versión  &1.0\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
 \multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Actualización de lista de Almas Gemelas}} & CU-x \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario, Sistema}        \\
@@ -213,85 +265,6 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Borrar Películas}} & CU-x \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Administrador/Empleado, Sistema}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Necesario tener los permisos de administrador o empleado del sistema.}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Conseguir una lista actualizada de películas en el sistema.}                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Permite a los empleados y administradores añadir películas al sistema y borrarlas dependiende de lo que interese.}                                            \\
-\hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
-\hline
-\end{tabular}
-\end{table}
-
-
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Añadir imágenes,videos,etc de películas}} & CU-3 \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Sistema}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario,Optativo}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Que la película esté añadida}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proporcionar al Usuario información visual sobre la película }                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Es añadir los posters, trailer, imágenes de rodaje de una película que esté añadida}                                            \\
-\hline
-Autor              &      Jose Ramón Trillo        & Fecha   & 9/11/2014     &   Versión  &1.0\\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Añadir Películas}} & CU-6 \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Sistema}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario,Esencial}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Que la película exista o se vaya a estrenar}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Mantener viva la web y actualizarla con películas nuevas}                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Consiste en añadir la ficha de una película}                                            \\
-\hline
-Autor              &     Jose Ramón Trillo         & Fecha    &  9/11/2014   &   Versión  &1.0\\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
 \multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Asociación de Almas Gemelas}} & CU-x \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario, Sistema}        \\
@@ -316,6 +289,31 @@ Autor              &     Rafael Nogales         & Fecha    &  10/11/14   &   Ver
 \end{tabular}
 \end{table}
 
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Borrar Películas}} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Administrador/Empleado, Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Necesario tener los permisos de administrador o empleado del sistema.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Conseguir una lista actualizada de películas en el sistema.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Permite a los empleados y administradores añadir películas al sistema y borrarlas dependiende de lo que interese.}                                            \\
+\hline
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
+\hline
+\end{tabular}
+\end{table}
 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
@@ -369,12 +367,84 @@ Autor              &      Jose Ramón Trillo        & Fecha    & 9/11/2014    & 
 \end{tabular}
 \end{table}
 
-%%%%%%%%%%%% %%%%%%%%%%%% %%%%%%%% %%%%%%%%%%%% %%
-%												%
-%		Aquí va el de compra de peliculas		%
-%												%
-%%%%%%%%%%%% %%%%%%%%%%%% %%%%%%%% %%%%%%%%%%%% %%
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Comparar Película}} & CU-1 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Cliente, Usuario}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario,Opcional}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Tiene que elegir mas de una película}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{ver que película nos parece mejor}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{sirve para ver los datos de varias películas a la vez}                                            \\
+\hline
+Autor              &      Jose Ramón Trillo        & Fecha   & 9/11/2014     &   Versión  &1.0\\
+\hline
+\end{tabular}
+\end{table}
 
+\begin{table}[ht]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Comprar Película}} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario(I), Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Las películas para comprar deben estar disponibles para su venta}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{La venta realizada queda almacenada y se le notifica al usuario sobre ello}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Realizar la venta de una película en DVD}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El usuario se conecta a la página web y, una vez que se ha identificado como socio, elige la película y la opción de comprar en DVD (si existe dicha opción y hay unidades disponibles).
+Se almacena la venta, el cliente realiza el pago, en ese momento o posteriormente, y se le proporciona un resguardo mediante e-mail.}                                            \\
+\hline
+Autor           &Elena Toro              & Fecha    &10-11-14     &   Versión  &1.0\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Comprobar disponibilidad} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Sistema(I)}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{Si la película está disponible para su venta en DVD, el socio ya la puede comprar. En otro caso, el socio la podrá reservar si lo desea.}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comprobar la disponibilidad de una película para su venta en DVD.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El usuario indica la película a consultar y el sistema comprobará su estado de disponibilidad.}                                            \\
+\hline
+Autor           &Elena Toro              & Fecha    &10-11-14     &   Versión  &1.0\\
+\hline
+\end{tabular}
+\end{table}
 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
@@ -483,11 +553,10 @@ Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versió
 \end{tabular}
 \end{table}
 
-
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Moderación de Usuarios}} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Control de comentarios/críticas}} & CU-x \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Administrador/Empleado, Sistema}        \\
 \hline
@@ -499,16 +568,17 @@ Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versió
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Controlar el comportamiento de los usuarios en el sistema.}                                            \\
+\multicolumn{6}{|p{10cm}|}{Controlar los comentarios de los usuarios puesto pueden resultar inapropiados.}                                            \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Permite a los empleados y administradores controlar a los usuarios usando un métodos de sanciones.}                                            \\
+\multicolumn{6}{|p{10cm}|}{Permite a los empleados y administradores  manejar los comentarios (pueden eliminarlos).}                                            \\
 \hline
 Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
 \hline
 \end{tabular}
 \end{table}
+
 
 
 %%%%%%%%%%%% %%%%%%%%%%%% %%%%%%%% %%%%%%%%%%%% %%
@@ -544,7 +614,7 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  
 \end{tabular}
 \end{table}
 
-
+\clearpage
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
@@ -571,7 +641,6 @@ Autor              &      Jose Ramón Trillo        & Fecha    & 9/11/2014    & 
 \end{tabular}
 \end{table}
 
-
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
@@ -583,7 +652,7 @@ Autor              &      Jose Ramón Trillo        & Fecha    & 9/11/2014    & 
 \hline
 \multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Se debe poseer una cuenta de usuario (registrado).}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{El usuario identificado como socio ya puede usar la opción de comprar película (o reservarla en su defecto)}        \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
 \hline
@@ -591,137 +660,44 @@ Autor              &      Jose Ramón Trillo        & Fecha    & 9/11/2014    & 
 \hline
 \multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Permite a los usuarios identificarse en el sistema para posteriormente realizar distintas operaciones.}                                            \\
+\multicolumn{6}{|p{10cm}|}{El sistema solicita la identificación del usuario como socio mediante su nombre de usuario y contraseña. El sistema comprueba la vericidad de los datos sobre el socio y permite la opción deseada (compra o reserva).}                                            \\
 \hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
+Autor           &Elena Toro              & Fecha    &10-11-14     &   Versión  &1.0\\    
 \hline
 \end{tabular}
 \end{table}
 
-
-
-
-%%%%%%%%%%%%%
-%%
-%%
-%%
-%%%%%%%%%%%%%
-
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Registro(Alta usuario)}} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Lista de películas valoradas}} & CU-5 \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Cliente (Sin registro), Sistema}        \\
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario,Esencial}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{El cliente no debe poseer cuenta y por tanto no tiene un registro en el sistema.}        \\
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{El usuario esté registrado y hya valorado varias películas}        \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Registrar a los clientes sin cuenta en el sistema.}                                            \\
+\multicolumn{6}{|p{10cm}|}{Saber que películas ha valorado el usuario para no repetir}                                            \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
 \hline
-\multicolumn{6}{|p{10cm}|}{El cliente se registra en el sistema para acceder a las opciones del sistema de la que solo pueden hacer uso los usuarios(con registro).}                                            \\
+\multicolumn{6}{|p{10cm}|}{Es un listado de películas que el usuario ha valorado a lo largo de su vida como usuario de la web}                                            \\
 \hline
-Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versión  & 1\\     
-\hline
-\end{tabular}
-\end{table}
-\clearpage
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Modificar información de Usuario}} & CU-x \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario (Con registro), Sistema}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Debe ser un Usuario por lo que se tiene que estar registrado previamente.}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Conseguir la comodidad con los datos del usuario y que este puede modificarlos dentro de ciertas limitaciones.}                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{El usuario modifica su información de cuenta como el Correo, Contraseaña...}                                            \\
-\hline
-Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versión  & 1.0\\     
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Votar Películas}} & CU-x \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario(Con registro), Sistema}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Se debe poseer una cuenta de usuario (registrado).}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Dar la opinión de los usuarios sobre las películas a modo de voto.}                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Permite al usuario votar una película positiva o negativamente.
-\linebreak \textit{Nota: Como consecuencia se entra en la lista de espera para actualizar lista de almas gemelas en el caso de que el usuario no estuviese ya en ella.}}                                            \\
-\hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\     
+Autor              &       Jose Ramón Trillo       & Fecha    & 9/11/2014     &   Versión  &1.0\\
 \hline
 \end{tabular}
 \end{table}
 
 
-
-
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Control de comentarios/críticas}} & CU-x \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Administrador/Empleado, Sistema}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Necesario tener los permisos de administrador o empleado del sistema.}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Controlar los comentarios de los usuarios puesto pueden resultar inapropiados.}                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Permite a los empleados y administradores  manejar los comentarios (pueden eliminarlos).}                                            \\
-\hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
-\hline
-\end{tabular}
-\end{table}
-
-
-
-
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Listar usuarios Baneados del sistema}} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Listar Usuarios Baneados del sistema}} & CU-x \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Administrador/Empleado, Sistema}        \\
 \hline
@@ -770,114 +746,28 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  
 \end{tabular}
 \end{table}
 
-
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Comparar Película}} & CU-1 \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Moderación de Usuarios}} & CU-x \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Cliente, Usuario}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario,Opcional}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Tiene que elegir mas de una película}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{ver que película nos parece mejor}                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{sirve para ver los datos de varias películas a la vez}                                            \\
-\hline
-Autor              &      Jose Ramón Trillo        & Fecha   & 9/11/2014     &   Versión  &1.0\\
-\hline
-\end{tabular}
-\end{table}
-
-
-
-
-
-
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Valorar Películas}} & CU-4 \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario,Esencial}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{El Usuario esté registrado}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{El Usuario de una puntuación a la película}                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Es la manera (aparate de las críticas) con la que el usuario puede decir si le ha gustado una película }                                            \\
-\hline
-Autor              &      Jose Ramón Trillo        & Fecha    & 9/11/2014    &   Versión  &1.0\\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Lista de películas valoradas}} & CU-5 \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario,Esencial}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{El usuario esté registrado y hya valorado varias películas}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Saber que películas ha valorado el usuario para no repetir}                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Es un listado de películas que el usuario ha valorado a lo largo de su vida como usuario de la web}                                            \\
-\hline
-Autor              &       Jose Ramón Trillo       & Fecha    & 9/11/2014     &   Versión  &1.0\\
-\hline
-\end{tabular}
-\end{table}
-
-
-
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Ver información de la película}} & CU-7 \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario, Cliente}        \\
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Administrador/Empleado, Sistema}        \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Que la película exista}        \\
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Necesario tener los permisos de administrador o empleado del sistema.}        \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
 \hline
-\multicolumn{6}{|p{10cm}|}{proporcionar a la persona datos relevantes sobre la película que consulta}                                            \\
+\multicolumn{6}{|p{10cm}|}{Controlar el comportamiento de los usuarios en el sistema.}                                            \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Conjunto de datos sobre una película, guardados en la ficha de esta }                                            \\
+\multicolumn{6}{|p{10cm}|}{Permite a los empleados y administradores controlar a los usuarios usando un métodos de sanciones.}                                            \\
 \hline
-Autor              &     Jose Ramón Trillo         & Fecha    & 9/11/2014    &   Versión  &1.0\\
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
 \hline
 \end{tabular}
 \end{table}
@@ -911,6 +801,164 @@ Autor              &     Jose Ramón Trillo         & Fecha    & 9/11/2014    & 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Modificar información de Usuario}} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario (Con registro), Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Debe ser un Usuario por lo que se tiene que estar registrado previamente.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Conseguir la comodidad con los datos del usuario y que este puede modificarlos dentro de ciertas limitaciones.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El usuario modifica su información de cuenta como el Correo, Contraseaña...}                                            \\
+\hline
+Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versión  & 1.0\\     
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Pagar en Cuenta} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Socio(I), Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Acción por parte de un socio de hacer un pago en la cuenta corriente de la web.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El socio notifica al sistema de que quiere realizar el pago en la cuenta, indicando la cantidad que desea ingresar y la forma de pago que usará. El sistema verificará el ingreso.}                                            \\
+\hline
+Autor           &Elena Toro              & Fecha    &10-11-14     &   Versión  &1.0\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Pagar en Metálico} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Socio(I), Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Acción por parte de un socio de pagar en metálico una cantidad determinada.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El socio notifica al sistema de que quiere realizar el pago en metálico y el sistema le indica la cantidad a pagar.}                                            \\
+\hline
+Autor           &Elena Toro              & Fecha    &10-11-14     &   Versión  &1.0\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Pagar con Tarjeta} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Socio(I), Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Acción por parte de un socio de pagar con tarjeta una cantidad determinada.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El socio notifica al sistema de que quiere realizar el pago usando una tarjeta de crédito. El sistema le indica la cantidad a pagar,la información necesaria para efectuarlo y almacena la información sobre dicho pago}                                            \\
+\hline
+Autor           &Elena Toro              & Fecha    &10-11-14     &   Versión  &1.0\\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Registro(Alta usuario)}} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Cliente (Sin registro), Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{El cliente no debe poseer cuenta y por tanto no tiene un registro en el sistema.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Registrar a los clientes sin cuenta en el sistema.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El cliente se registra en el sistema para acceder a las opciones del sistema de la que solo pueden hacer uso los usuarios(con registro).}                                            \\
+\hline
+Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versión  & 1\\     
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Reservar Película} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario(I), Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Las películas a reservar no están disponibles para su venta en DVD}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{Las películas reservadas se almacenan en una lista ordenada}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Reservar una película y ser informado cuando esté disponible para su venta en DVD}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El usuario se conecta a la página web y, una vez que se ha identificado como socio, elige la película. Al no estar disponible para la compra en DVD, pulsa la opción de reservar, almacenándose el pedido en una lista ordenada.}                                            \\
+\hline
+Autor           &Elena Toro              & Fecha    &10-11-14     &   Versión  &1.0\\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
 \multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Sugerencias de películas a añadir}} & CU-9 \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario}        \\
@@ -934,36 +982,83 @@ Autor              &    Jose Ramón Trillo         & Fecha    &  9/11/2014   &  
 \end{tabular}
 \end{table}
 
-
-%======================================
-%Ejemplo de tabla de casos de uso:
-%======================================
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Valorar Películas}} & CU-4 \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{}        \\
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{}        \\
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario,Esencial}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{}        \\
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{El Usuario esté registrado}        \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
 \hline
-\multicolumn{6}{|p{10cm}|}{}                                            \\
+\multicolumn{6}{|p{10cm}|}{El Usuario de una puntuación a la película}                                            \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
 \hline
-\multicolumn{6}{|p{10cm}|}{}                                            \\
+\multicolumn{6}{|p{10cm}|}{Es la manera (aparate de las críticas) con la que el usuario puede decir si le ha gustado una película }                                            \\
 \hline
-Autor              &              & Fecha    &     &   Versión  &\\     
+Autor              &      Jose Ramón Trillo        & Fecha    & 9/11/2014    &   Versión  &1.0\\
 \hline
 \end{tabular}
 \end{table}
 
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Ver información de la película}} & CU-7 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario, Cliente}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Que la película exista}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{proporcionar a la persona datos relevantes sobre la película que consulta}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Conjunto de datos sobre una película, guardados en la ficha de esta }                                            \\
+\hline
+Autor              &     Jose Ramón Trillo         & Fecha    & 9/11/2014    &   Versión  &1.0\\
+\hline
+\end{tabular}
+\end{table}
 
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Votar Películas}} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario(Con registro), Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Se debe poseer una cuenta de usuario (registrado).}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Dar la opinión de los usuarios sobre las películas a modo de voto.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Permite al usuario votar una película positiva o negativamente.
+\linebreak \textit{Nota: Como consecuencia se entra en la lista de espera para actualizar lista de almas gemelas en el caso de que el usuario no estuviese ya en ella.}}                                            \\
+\hline
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\     
+\hline
+\end{tabular}
+\end{table}
 
 \end{document}
