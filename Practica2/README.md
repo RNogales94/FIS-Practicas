@@ -1,12 +1,12 @@
-FIS-Practica2
-=============
+FIS-Practica2 - FINALIZADO 
+==========================
 
 Cada uno tiene que realizar lo mencionado a continuación:
 
 Jose Ramón:
 -----------
 * ~~Realizar Jerarquia de caso de uso de peliculas.~~
-* Realizar Diagrama de caso de uso de gestión de peliculas.
+* ~~Realizar Diagrama de caso de uso de gestión de peliculas.~~
 * ~~Descripción de los casos de uso correspondientes.~~
 
 Rafa:
@@ -24,8 +24,8 @@ Lothar:
 Elena:
 -----------
 * ~~Realizar Jerarquia de caso de uso de venta.~~
-* Realizar Diagrama de caso de uso de gestión de venta.
-* Descripción de los casos de uso correspondientes.
+* ~~Realizar Diagrama de caso de uso de gestión de venta.~~
+* ~~Descripción de los casos de uso correspondientes.~~
 
 Clase:
 ------
