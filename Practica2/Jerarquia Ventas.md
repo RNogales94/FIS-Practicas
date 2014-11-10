@@ -4,7 +4,7 @@ GESTIÓN DE VENTAS
 	Escenarios asociados con la gestión de ventas de películas.
 
 -Casos de Uso:
-	Comprar Película, Reservar Película, Identificar Socio, Disponibilidad de Películas, Pago a Cuenta, Pago en Metálico, Pago con Tarjeta.
+	Comprar Película, Reservar Película, Identificar Socio, Comprobar Disponibilidad, Pagar en Cuenta, Pagar en Metálico, Pagar con Tarjeta.
 
 -Actores:
-	Usuario, Administrador.
+	Usuario, Sistema.
