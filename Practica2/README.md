@@ -13,7 +13,7 @@ Rafa:
 -----------
 * ~~Realizar Jerarquia de caso de uso de Almas gemelas~~.
 * ~~Realizar Diagrama de caso de uso de gestión de Almas gemelas~~.
-* Descripción de los casos de uso correspondientes.
+* ~~Descripción de los casos de uso correspondientes~~.
 
 Lothar:
 -----------
