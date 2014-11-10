@@ -27,17 +27,17 @@
 	\item[Casos de Uso]: 
 	\begin{itemize}
 		\item Acceder a lista de Almas Gemelas.
-		\item Actualizar Películas.
-		\item Añadir/borrar Películas.
-		\item Banear usuarios.
-		\item Comprar Película.
-		\item Consulta a Empleado/Administrador.
-		\item Consultar cuenta de Usuario.
-		\item Consultar información de Usuario.
-		\item Consultar películas.
-		\item Control de comentarios/críticas.
-		\item Eliminar cuenta de Usuario.
-		\item Identificar Usuario.
+		\item Actualizar Películas. 
+		\item Añadir/borrar Películas.  %
+		\item Banear usuarios.		   %
+		\item Comprar Película.			% Falta Caso de Uso
+		\item Consulta a Empleado/Administrador. %
+		\item Consultar cuenta de Usuario. %
+		\item Consultar información de Usuario. %
+		\item Consultar películas. %
+		\item Control de comentarios/críticas. %
+		\item Eliminar cuenta de Usuario. %
+		\item Identificar Usuario.		%
 		\item Listar usuarios Baneados del sistema.
 		\item Listar usuarios colaboradores.
 		\item Moderación de usuarios.
@@ -52,9 +52,9 @@
 	\item[Descripción]:\\ Escenarios asociados con la gestión y formación de almas gemelas.
 	\item[Casos de Uso]:
 	\begin{itemize}
-		\item Acceder a lista de Almas Gemelas.
-		\item Actualización de lista de Almas Gemelas.
-		\item Asociación de Almas Gemelas.
+		\item Acceder a lista de Almas Gemelas.        %
+		\item Actualización de lista de Almas Gemelas. %
+		\item Asociación de Almas Gemelas.             %
 	\end{itemize}		
 	\item[Actores]:\\ Usuario, Sistema.
 	\end{description}
@@ -66,10 +66,10 @@
 	\item[Casos de uso]:
 	\begin{itemize}
 		\item Añadir imágenes, vídeos, etc de películas.
-		\item Añadir películas.
-		\item Borrar películas.
-		\item Comparar películas.
-		\item Escribir crítica.
+		\item Añadir películas. 
+		\item Borrar películas. 
+		\item Comparar película. %  Falta Caso de Uso
+		\item Escribir crítica.  %
 		\item Listar películas valoradas.
 		\item Modificar datos de la película.
 		\item Sugerencias de películas a añadir.
@@ -84,9 +84,9 @@
 	\item[Descripción]:\\ Escenarios asociados con la gestión de ventas de películas.
 	\item[Casos de Uso]:
 	\begin{itemize}
-		\item Comprar Película.
-		\item Disponibilidad de Películas.
-		\item Identificar Socio.
+		\item Comprar Película. %Falta Caso de Uso
+		\item Disponibilidad de Películas. %
+		\item Identificar Socio.															%% Identificar Socio o Identificar Usuario??
 		\item Pago a Cuenta.
 		\item Pago en Metálico.
 		\item Pago con Tarjeta.
@@ -121,29 +121,31 @@
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Asociación de Almas Gemelas}} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Acceder a lista de almas gemelas}} & CU-x \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario, Sistema}        \\
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario(Con registro), Sistema}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario, Esencial}        \\
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{El usuario acaba de registrarse por primera vez.}        \\
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Se debe poseer una cuenta de usuario (registrado).}        \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Asociar unas almas gemelas iniciales al cliente recien registrado.}                                            \\
+\multicolumn{6}{|p{10cm}|}{Dar a conocer al usuario una serie de personas que tienen los mismos gustos que dicha persona.}                                            \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
 \hline
-\multicolumn{6}{|p{10cm}|}{El cliente se registra en el sistema y automaticamente se le asocian unas 
-almas gemelas inicales basandonos en los gustos del resto de usuarios del sistema, se da un mayor peso a los gustos de usuarios en función de tener la misma nacionalidad, el mismo sexo y una edad cercana a la del cliente.}                                        \\
+\multicolumn{6}{|p{10cm}|}{Permite dar al usuario conocimiento de que personas comparten sus gustos y en parte están relacionadas con él.}                                            \\
 \hline
-Autor              &     Rafael Nogales         & Fecha    &  10/11/14   &   Versión  & 1\\     
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
 \hline
 \end{tabular}
 \end{table}
+
+\clearpage
+
 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
@@ -180,104 +182,233 @@ Autor              &     Rafael Nogales         & Fecha    &  10/11/14   &   Ver
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Registro(Alta usuario)}} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Actualizar Películas} & CU-x \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Cliente (Sin registro), Sistema}        \\
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Administrador/Empleado, Sistema}        \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{El cliente no debe poseer cuenta y por tanto no tiene un registro en el sistema.}        \\
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Necesario tener los permisos de administrador o empleado del sistema.}        \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Registrar a los clientes sin cuenta en el sistema.}                                            \\
+\multicolumn{6}{|p{10cm}|}{Actualizar la lista de películas disponibles.}                                            \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
 \hline
-\multicolumn{6}{|p{10cm}|}{El cliente se registra en el sistema para acceder a las opciones del sistema de la que solo pueden hacer uso los usuarios(con registro).}                                            \\
+\multicolumn{6}{|p{10cm}|}{Permite actualizar la lista de películas si anteriormente se ha añadido una o borrado.}                                            \\
 \hline
-Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versión  & 1\\     
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
 \hline
 \end{tabular}
 \end{table}
+
 \clearpage
+
+
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Consultar Películas}} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{/Borrar Películas} & CU-x \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Cliente (Sin registro),Usuario(Con registro) , Sistema}        \\
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Administrador/Empleado, Sistema}        \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{}        \\
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Necesario tener los permisos de administrador o empleado del sistema.}        \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Que se pueda acceder a información y multimedia hacerca de una película.}                                            \\
+\multicolumn{6}{|p{10cm}|}{Conseguir una lista actualizada de películas en el sistema.}                                            \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Permite a los clientes, usuarios acceder a informcación acerca de la película buscada.}                                            \\
+\multicolumn{6}{|p{10cm}|}{Permite a los empleados y administradores añadir películas al sistema y borrarlas dependiende de lo que interese.}                                            \\
 \hline
-Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versión  & 1\\     
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
 \hline
 \end{tabular}
 \end{table}
+
+\clearpage
+
+
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Modificar información de Usuario}} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Añadir imágenes,videos,etc de películas} & CU-3 \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario (Con registro), Sistema}        \\
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Sistema}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario,Optativo}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Debe ser un Usuario por lo que se tiene que estar registrado previamente.}        \\
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Que la película esté añadida}        \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Conseguir la comodidad con los datos del usuario y que este puede modificarlos dentro de ciertas limitaciones.}                                            \\
+\multicolumn{6}{|p{10cm}|}{Proporcionar al Usuario información visual sobre la película }                                            \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
 \hline
-\multicolumn{6}{|p{10cm}|}{El usuario modifica su información de cuenta como el Correo, Contraseaña...}                                            \\
+\multicolumn{6}{|p{10cm}|}{Es añadir los posters, trailer, imágenes de rodaje de una película que esté añadida}                                            \\
 \hline
-Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versión  & 1.0\\     
+Autor              &              & Fecha   & 9/11/2015     &   Versión  &1.0\\
 \hline
 \end{tabular}
 \end{table}
+
+\clearpage
+
+
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Consultar información de Usuario}} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Añadir Películas} & CU-6 \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario (Con registro), Sistema}        \\
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Sistema}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario,Esencial}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Debe ser un Usuario por lo que se tiene que estar registrado previamente.}        \\
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Que la película exista o se vaya a estrenar}        \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Conseguir la comodidad con los datos del usuario y que este pueda consultarlos en cualquier momento.}                                            \\
+\multicolumn{6}{|p{10cm}|}{Mantener viva la web y actualizarla con películas nuevas}                                            \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
 \hline
-\multicolumn{6}{|p{10cm}|}{El usuario consulta su información de cuenta como el estado,gustos...}                                            \\
+\multicolumn{6}{|p{10cm}|}{Consiste en añadir la ficha de una película}                                            \\
 \hline
-Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versión  & 1.0\\     
+Autor              &              & Fecha    &  9/11/2015   &   Versión  &1.0\\
 \hline
 \end{tabular}
 \end{table}
+
+\clearpage
+
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Asociación de Almas Gemelas}} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario, Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{El usuario acaba de registrarse por primera vez.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Asociar unas almas gemelas iniciales al cliente recien registrado.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El cliente se registra en el sistema y automaticamente se le asocian unas 
+almas gemelas inicales basandonos en los gustos del resto de usuarios del sistema, se da un mayor peso a los gustos de usuarios en función de tener la misma nacionalidad, el mismo sexo y una edad cercana a la del cliente.}                                        \\
+\hline
+Autor              &     Rafael Nogales         & Fecha    &  10/11/14   &   Versión  & 1\\     
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Banear Usuario} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Administrador/Empleado, Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Necesario tener los permisos de administrador o empleado del sistema.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Denegar el acceso a un usuario conflictivo.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Permite a los administradores y empleados denegar el acceso a un usuario conflictivo del sistema.}                                            \\
+\hline
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Borrar Película} & CU-10 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Haya error en la ficha que deteriore o ocupe memoria}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Eliminar películas repetidas que el sistema haya añadido varias veces}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Consiste en borrar la ficha de una película}                                            \\
+\hline
+Autor              &              & Fecha    & 9/11/2015    &   Versión  &1.0\\
+\hline
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%% %%%%%%%%%%%% %%%%%%%% %%%%%%%%%%%% %%
+%												%
+%		Aquí va el de compra de peliculas		%
+%												%
+%%%%%%%%%%%% %%%%%%%%%%%% %%%%%%%% %%%%%%%%%%%% %%
+
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Consulta a Empleado/Administrador} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario (Con registro), Administrador/Empleado}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Se debe poseer una cuenta de usuario (registrado).}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Contactar el usuario con un administrador o empleado.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El usuario podrá usar esta funcionalidad para contactar con un administrador para resolver algún tipo de incidencia o duda.}                                            \\
+\hline
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
+\hline
+\end{tabular}
+\end{table}
+
+
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
@@ -304,33 +435,95 @@ Autor             &     Lothar Soto          & Fecha    &  8/11/14   &   Versió
 \end{tabular}
 \end{table}
 
-\clearpage
+
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Votar Películas}} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Consultar información de Usuario}} & CU-x \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario(Con registro), Sistema}        \\
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario (Con registro), Sistema}        \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Se debe poseer una cuenta de usuario (registrado).}        \\
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Debe ser un Usuario por lo que se tiene que estar registrado previamente.}        \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Dar la opinión de los usuarios sobre las películas a modo de voto.}                                            \\
+\multicolumn{6}{|p{10cm}|}{Conseguir la comodidad con los datos del usuario y que este pueda consultarlos en cualquier momento.}                                            \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Permite al usuario votar una película positiva o negativamente.
-\linebreak \textit{Nota: Como consecuencia se entra en la lista de espera para actualizar lista de almas gemelas en el caso de que el usuario no estuviese ya en ella.}}                                            \\
+\multicolumn{6}{|p{10cm}|}{El usuario consulta su información de cuenta como el estado,gustos...}                                            \\
 \hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\     
+Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versión  & 1.0\\     
 \hline
 \end{tabular}
 \end{table}
+
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Consultar Películas}} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Cliente (Sin registro),Usuario(Con registro) , Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Que se pueda acceder a información y multimedia hacerca de una película.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Permite a los clientes, usuarios acceder a informcación acerca de la película buscada.}                                            \\
+\hline
+Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versión  & 1\\     
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Moderación de Usuarios} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Administrador/Empleado, Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Necesario tener los permisos de administrador o empleado del sistema.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Controlar el comportamiento de los usuarios en el sistema.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Permite a los empleados y administradores controlar a los usuarios usando un métodos de sanciones.}                                            \\
+\hline
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
+\hline
+\end{tabular}
+\end{table}
+
+
+%%%%%%%%%%%% %%%%%%%%%%%% %%%%%%%% %%%%%%%%%%%% %%
+%												%
+%    Aquí va el de Disponibilidad De Peliculas	%
+%												%
+%%%%%%%%%%%% %%%%%%%%%%%% %%%%%%%% %%%%%%%%%%%% %%
+
+
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
@@ -357,28 +550,29 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  
 \end{tabular}
 \end{table}
 
+\clearpage
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Acceder a lista de almas gemelas}} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Escribir crítica} & CU-2 \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario(Con registro), Sistema}        \\
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Sistema, Usuario}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario,Esencial}        \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Se debe poseer una cuenta de usuario (registrado).}        \\
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{El cliente esté registrado}        \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Dar a conocer al usuario una serie de personas que tienen los mismos gustos que dicha persona.}                                            \\
+\multicolumn{6}{|p{10cm}|}{Las personas den su opinión sobre una película}                                            \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Permite dar al usuario conocimiento de que personas comparten sus gustos y en parte están relacionadas con él.}                                            \\
+\multicolumn{6}{|p{10cm}|}{Es una opinión subjetiva sobre película visualizada}                                            \\
 \hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
+Autor              &              & Fecha    & 9/11/2015    &   Versión  &1.0\\
 \hline
 \end{tabular}
 \end{table}
@@ -409,12 +603,78 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  
 \end{tabular}
 \end{table}
 
+
+
+
+%%%%%%%%%%%%%
+%%
+%%
+%%
+%%%%%%%%%%%%%
+
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Consulta a Empleado/Administrador} & CU-x \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Registro(Alta usuario)}} & CU-x \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario (Con registro), Administrador/Empleado}        \\
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Cliente (Sin registro), Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{El cliente no debe poseer cuenta y por tanto no tiene un registro en el sistema.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Registrar a los clientes sin cuenta en el sistema.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El cliente se registra en el sistema para acceder a las opciones del sistema de la que solo pueden hacer uso los usuarios(con registro).}                                            \\
+\hline
+Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versión  & 1\\     
+\hline
+\end{tabular}
+\end{table}
+
+\clearpage
+
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Modificar información de Usuario}} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario (Con registro), Sistema}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Debe ser un Usuario por lo que se tiene que estar registrado previamente.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Conseguir la comodidad con los datos del usuario y que este puede modificarlos dentro de ciertas limitaciones.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El usuario modifica su información de cuenta como el Correo, Contraseaña...}                                            \\
+\hline
+Autor              &     Lothar Soto         & Fecha    &  8/11/14   &   Versión  & 1.0\\     
+\hline
+\end{tabular}
+\end{table}
+
+
+\clearpage
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{\textbf{Votar Películas}} & CU-x \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario(Con registro), Sistema}        \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
 \hline
@@ -424,68 +684,20 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Contactar el usuario con un administrador o empleado.}                                            \\
+\multicolumn{6}{|p{10cm}|}{Dar la opinión de los usuarios sobre las películas a modo de voto.}                                            \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
 \hline
-\multicolumn{6}{|p{10cm}|}{El usuario podrá usar esta funcionalidad para contactar con un administrador para resolver algún tipo de incidencia o duda.}                                            \\
+\multicolumn{6}{|p{10cm}|}{Permite al usuario votar una película positiva o negativamente.
+\linebreak \textit{Nota: Como consecuencia se entra en la lista de espera para actualizar lista de almas gemelas en el caso de que el usuario no estuviese ya en ella.}}                                            \\
 \hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
+Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\     
 \hline
 \end{tabular}
 \end{table}
 
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Actualizar Películas} & CU-x \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Administrador/Empleado, Sistema}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Necesario tener los permisos de administrador o empleado del sistema.}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Actualizar la lista de películas disponibles.}                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Permite actualizar la lista de películas si anteriormente se ha añadido una o borrado.}                                            \\
-\hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
-\hline
-\end{tabular}
-\end{table}
 
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Añadir/Borrar Películas} & CU-x \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Administrador/Empleado, Sistema}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Necesario tener los permisos de administrador o empleado del sistema.}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Conseguir una lista actualizada de películas en el sistema.}                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Permite a los empleados y administradores añadir películas al sistema y borrarlas dependiende de lo que interese.}                                            \\
-\hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
-\hline
-\end{tabular}
-\end{table}
+
 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
@@ -512,31 +724,9 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  
 \hline
 \end{tabular}
 \end{table}
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Moderación de Usuarios} & CU-x \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Administrador/Empleado, Sistema}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, Esencial}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Necesario tener los permisos de administrador o empleado del sistema.}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Controlar el comportamiento de los usuarios en el sistema.}                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Permite a los empleados y administradores controlar a los usuarios usando un métodos de sanciones.}                                            \\
-\hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
-\hline
-\end{tabular}
-\end{table}
+
+
+
 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
@@ -590,31 +780,6 @@ Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  
 \end{tabular}
 \end{table}
 
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Banear Usuario} & CU-x \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Administrador/Empleado, Sistema}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario, Esencial}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Necesario tener los permisos de administrador o empleado del sistema.}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Denegar el acceso a un usuario conflictivo.}                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Permite a los administradores y empleados denegar el acceso a un usuario conflictivo del sistema.}                                            \\
-\hline
-Autor          &       Lothar Soto        & Fecha    &  8/11/14   &   Versión  & 1.0\\    
-\hline
-\end{tabular}
-\end{table}
 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
@@ -642,59 +807,10 @@ Autor              &              & Fecha   & 9/11/2015     &   Versión  &1.0\\
 \end{tabular}
 \end{table}
 
-\clearpage
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Escribir crítica} & CU-2 \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Sistema, Usuario}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario,Esencial}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{El cliente esté registrado}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Las personas den su opinión sobre una película}                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Es una opinión subjetiva sobre película visualizada}                                            \\
-\hline
-Autor              &              & Fecha    & 9/11/2015    &   Versión  &1.0\\
-\hline
-\end{tabular}
-\end{table}
 
 
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Añadir imágenes,videos,etc de películas} & CU-3 \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Sistema}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario,Optativo}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Que la película esté añadida}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proporcionar al Usuario información visual sobre la película }                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Es añadir los posters, trailer, imágenes de rodaje de una película que esté añadida}                                            \\
-\hline
-Autor              &              & Fecha   & 9/11/2015     &   Versión  &1.0\\
-\hline
-\end{tabular}
-\end{table}
+
+
 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
@@ -748,31 +864,7 @@ Autor              &              & Fecha    & 9/11/2015     &   Versión  &1.0\
 \end{tabular}
 \end{table}
 
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Añadir Películas} & CU-6 \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Sistema}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario,Esencial}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Que la película exista o se vaya a estrenar}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Mantener viva la web y actualizarla con películas nuevas}                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Consiste en añadir la ficha de una película}                                            \\
-\hline
-Autor              &              & Fecha    &  9/11/2015   &   Versión  &1.0\\
-\hline
-\end{tabular}
-\end{table}
+
 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
@@ -848,32 +940,6 @@ Autor              &              & Fecha    & 9/11/2015    &   Versión  &1.0\\
 \multicolumn{6}{|p{10cm}|}{Es una petición del usuario al Sistema para que este añada ficha de alguna película que no se encuentre en la base de datos}                                            \\
 \hline
 Autor              &              & Fecha    &  9/11/2015   &   Versión  &1.0\\
-\hline
-\end{tabular}
-\end{table}
-
-\begin{table}[h]
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Borrar Película} & CU-10 \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Sistema}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Secundario, Esencial}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Haya error en la ficha que deteriore o ocupe memoria}        \\
-\hline
-\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Eliminar películas repetidas que el sistema haya añadido varias veces}                                            \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
-\hline
-\multicolumn{6}{|p{10cm}|}{Consiste en borrar la ficha de una película}                                            \\
-\hline
-Autor              &              & Fecha    & 9/11/2015    &   Versión  &1.0\\
 \hline
 \end{tabular}
 \end{table}
