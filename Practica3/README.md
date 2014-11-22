@@ -15,4 +15,4 @@ Joserra:
 
 Lothar:
 -------
-* Resto.
+* ~~Resto.~~
