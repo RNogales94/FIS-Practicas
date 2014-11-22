@@ -21,6 +21,434 @@
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Admitir un miembro en la Comunidad} & CU-35 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario registrado}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{El miembro a admitir no debe estar previamente en la comunidad. Debes ser usuario registrado.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Añadir a un usuario a una comunidad de los mismos.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Un usuario registrado permitirá admitir usuarios que le han mandado solicitud de acceso a la comunidad que ha creado}                                            \\
+\hline
+Autor         &       Lothar Soto        &  Fecha   &  22/11/14   &   Versión  & 1.0\\     
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{El usuario observa las solicitudes que tiene de otros usuarios para entrar a la comunidad y solicita su admisión.} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{El sistema comprueba si el usuario a admitir se encuentra ya dentro de esa comunidad.}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{Se informa de que se ha añadido el usuario correctamente.}\\
+\hline
+
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{2a} & \multicolumn{5}{|p{9cm}|}{Si el usuario ya se encuentra en la comunidad se informa con un mensaje de error.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Elevada puesto será usado por usuarios.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Elevado, casi no se apreciaría coste en rendimiento.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Baja.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Añadir Película} & CU-35 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario VIP}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Es necesario ser usuario VIP. La película a añadir debe existir previamente.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{La película queda añadida al sistema.}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Ampliar la base de datos de películas del sistema.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El usuario VIP registrará una nueva película en el sistema.}                                            \\
+\hline
+Autor         &       Lothar Soto        &  Fecha   &  22/11/14   &   Versión  & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{1} & \multicolumn{2}{p{3cm}}{El usuario VIP solicita añadir una película} & \multicolumn{1}{|p{1cm}|}{2} & \multicolumn{2}{p{3cm}|}{El sistema le proporciona un formulario para realizar la adición.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{3} & \multicolumn{2}{p{3cm}}{El usuario se encarga de aportar la información.} & \multicolumn{1}{|p{1cm}|}{4} & \multicolumn{2}{p{3cm}|}{Se comprueba si la información aportada es correcta.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{5} & \multicolumn{2}{p{3cm}|}{Se añade la película al sistema.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{1cm}}{4a} & \multicolumn{5}{|p{9cm}|}{Si la información no es correcta se informa de ello.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Alta.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Media.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentario}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Crear Comunidad} & CU-35 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario registrado}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Ser un usuario registrado en el sistema.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{La comunidad creada continuara en el sistema hasta que el usuario creador la elimine.}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Generar un grupo que incluye usuarios relacionados entre si.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El usuario crea un grupo que incluira usuarios registrados en el sistema.}                                            \\
+\hline
+Autor         &       Lothar Soto        &  Fecha   &  22/11/14   &   Versión  & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{1} & \multicolumn{2}{p{3cm}}{El usuario solicita al sistema crear una comunidad que incluira otros usuarios.} & \multicolumn{1}{|p{1cm}|}{2} & \multicolumn{2}{p{3cm}|}{Se muestra al usuario un formulario de creación de comunidad.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{3} & \multicolumn{2}{p{3cm}}{El usuario aporta la información de la comunidad.} & \multicolumn{1}{|p{1cm}|}{4} & \multicolumn{2}{p{3cm}|}{Se comprueba si la información aportada es viable.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{5} & \multicolumn{2}{p{3cm}|}{Se informa de la creación de la comunidad.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{1cm}}{4a} & \multicolumn{5}{|p{9cm}|}{En caso de error se informa al usuario el campo del formulario erroneo.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Alta.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Media.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentario}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Criticar Película} & CU-35 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario registrado}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Es necesario ser usuario VIP. Tienen que existir películas antes de criticarlas.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Aporta una valoración y redacción a una película en el sistema.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El usuario aporta información acerca de la película y una valoración de la misma que permanecerá en el sistema.}                                            \\
+\hline
+Autor         &       Lothar Soto        &  Fecha   &  22/11/14   &   Versión  & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{1} & \multicolumn{2}{p{3cm}}{El usuario solicita criticar una película.} & \multicolumn{1}{|p{1cm}|}{2} & \multicolumn{2}{p{3cm}|}{Se aporta un formulario para redacctar la crítica al usuario.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{3} & \multicolumn{2}{p{3cm}}{El usuario aporta la información y da una valoración en base al formulario.} & \multicolumn{1}{|p{1cm}|}{4} & \multicolumn{2}{p{3cm}|}{Se aporta la información dentro de las críticas de la película.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{1cm}}{} & \multicolumn{5}{|p{9cm}|}{}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Alta.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Media.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentario}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Listar Películas añadidas por una Comunidad} & CU-35 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario registrado}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Pertenecer a una comunidad. Ser usuario registrado del sistema.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Crear una lista con las películas añadidas por los usuarios de la comunidad a la que pertenece.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El usuario solicita una lista de películas que posteriormete es calculada y mostrada.}                                            \\
+\hline
+Autor         &       Lothar Soto        &  Fecha   &  22/11/14   &   Versión  & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{1} & \multicolumn{2}{p{3cm}}{El usuario solicita una lista de películas al sistema.} & \multicolumn{1}{|p{1cm}|}{2} & \multicolumn{2}{p{3cm}|}{Se calcula la lista, comprobando cada película vista en la comunidad.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{3} & \multicolumn{2}{p{3cm}|}{Aporta la información de las listas de las películas de la comunidad.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{1cm}}{3a} & \multicolumn{5}{|p{9cm}|}{Si no existen películas se informa al usuario de ello.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Media.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentario}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Listar Películas criticadas por una Comunidad} & CU-35 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario registrado}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Pertenecer a una comunidad. Ser usuario registrado del sistema.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Crear una lista con las películas añadidas por los usuarios de la comunidad a la que pertenece.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El usuario solicita una lista de películas que posteriormete es calculada y mostrada.}                                            \\
+\hline
+Autor         &       Lothar Soto        &  Fecha   &  22/11/14   &   Versión  & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{1} & \multicolumn{2}{p{3cm}}{El usuario solicita una lista de películas criticadas por la comunidad al sistema.} & \multicolumn{1}{|p{1cm}|}{2} & \multicolumn{2}{p{3cm}|}{El sistema comprueba las películas buscando criticas de los usuarios de la comunidad a la que pertenece.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{3} & \multicolumn{2}{p{3cm}|}{Se informa al usuario de la lista generada.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{1cm}}{3a} & \multicolumn{5}{|p{9cm}|}{Si no hay usuarios que hayan criticado películas se informa de ello.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Media.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Pedir ser miembro de Comunidad} & CU-35 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario registrado}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Ser usuario registrado.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El usuario solicita la entrada a una comunidad.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Permite que se solicite ser miembre de una comunidad pero tiene que ser aceptado por el usuario creador de la misma.}                                            \\
+\hline
+Autor         &       Lothar Soto        &  Fecha   &  22/11/14   &   Versión  & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{1} & \multicolumn{2}{p{3cm}}{Se solicita ser miembro de comunidad} & \multicolumn{1}{|p{1cm}|}{2} & \multicolumn{2}{p{3cm}|}{Se muestra un formulario para la solicitud.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{3} & \multicolumn{2}{p{3cm}}{Se aporta la información de la solicitud} & \multicolumn{1}{|p{1cm}|}{4} & \multicolumn{2}{p{3cm}|}{Se envia la solicitud al creador de la comunidad.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{5} & \multicolumn{2}{p{3cm}}{El usuario creador de la comunidad acepta o declina la solicitud.} & \multicolumn{1}{|p{1cm}|}{6} & \multicolumn{2}{p{3cm}|}{Se informa de ello al usuario solicitante.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{1cm}}{} & \multicolumn{5}{|p{9cm}|}{}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Alta.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentario}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Puntuar Película} & CU-35 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario registrado, Usuario VIP}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Ser un usuario registrado. Debe existir palículas en el sistemas para puntuarlas.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{La película queda valorada en el sistema.}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Dar un valoración a la película que advirta de su calidad y características.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El usuario da una valoración que queda registrada en el sistema.}                                            \\
+\hline
+Autor         &       Lothar Soto        &  Fecha   &  22/11/14   &   Versión  & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{1} & \multicolumn{2}{p{3cm}}{Se solicita al sistema valorar la película.} & \multicolumn{1}{|p{1cm}|}{2} & \multicolumn{2}{p{3cm}|}{El sistema muestra un formulario especifico.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{3} & \multicolumn{2}{p{3cm}}{El usuario selecciona la cantidad.} & \multicolumn{1}{|p{1cm}|}{4} & \multicolumn{2}{p{3cm}|}{Se agrega la valoración y se realiza la media de las valoraciones que queda almacenada en el sistema.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{1cm}}{} & \multicolumn{5}{|p{9cm}|}{}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Alto.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alto.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alto.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alto.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentario}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{Ver Comunidad} & CU-35 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{Usuario registrado}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo}          & \multicolumn{4}{p{8cm}|}{Primario, esencial}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición}  & \multicolumn{4}{p{8cm}|}{Ser usuario registrado.}        \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{}        \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito}                                   \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Mostrar la información de la comunidad solicitada.}                                            \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen}                                 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El usuario solicita al sistema información acerca de la comunidad que se muestra posteriormente.}                                            \\
+\hline
+Autor         &       Lothar Soto        &  Fecha   &  22/11/14   &   Versión  & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{1} & \multicolumn{2}{p{3cm}}{Se solicita ver la información de la comunidad.} & \multicolumn{1}{|p{1cm}|}{2} & \multicolumn{2}{p{3cm}|}{El sistema muestra la información de la misma y da la opción de solicitar la admisión en la misma.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{1cm}}{} & \multicolumn{5}{|p{9cm}|}{}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Alta.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alto.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentario}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
 \multicolumn{2}{|p{2cm}|}{Casos de uso}  & \multicolumn{3}{p{7cm}|}{} & CU-35 \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Actores}       & \multicolumn{4}{p{8cm}|}{}        \\
@@ -35,19 +463,11 @@
 \hline
 \multicolumn{6}{|p{10cm}|}{}                                            \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Descripción}                                 \\
+\multicolumn{6}{|p{10cm}|}{Resumen}                                 \\
 \hline
 \multicolumn{6}{|p{10cm}|}{}                                            \\
 \hline
 Autor          &              &  Fecha   &     &   Versión  & \\     
-\hline
-\multicolumn{6}{|p{10cm}|}{Próposito}\\
-\hline
-\multicolumn{6}{|p{10cm}|}{}\\
-\hline
-\multicolumn{6}{|p{10cm}|}{Resumen}\\
-\hline
-\multicolumn{6}{|p{10cm}|}{}\\
 \hline
 \multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
 \hline
@@ -77,7 +497,7 @@ Autor          &              &  Fecha   &     &   Versión  & \\
 \hline
 \multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{}\\
 \hline
-\multicolumn{6}{|p{10cm}|}{Resumen}\\
+\multicolumn{6}{|p{10cm}|}{Comentario}\\
 \hline
 \multicolumn{6}{|p{10cm}|}{}\\
 \hline
