@@ -1,0 +1,679 @@
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Añadir Películas} & cu-11 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Administrador} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Primario,esencial} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{Que la película no exista} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Consiste en Añadir películas para que las gente las valore} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Es la manera de añadir la una película para que el usuario la valore} \\
+\hline
+Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{El administrador ve, la cantidad de solicitudes que le han mandado de parte de los usuarios y también mira los estrenos} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{El sistema comprueba si la película candidata está añadida.}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{Una vez que se ha comprobado que no se encuentra la película entonces la añadimos a nuestra base de datos}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{2a} & \multicolumn{5}{|p{9cm}|}{Si la película está añadida saldrá un error}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Elevada puesto será usado por el usuario.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Elevado, no se aprecia en el coste de rendimiento.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Añadir trailer de Películas} & CU-12  \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Administrador} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Opcional} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{Que la película tenga ficha} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Consiste en enseñar al usuario el trailer para que vaya a ver la película y después la valore} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Es adjuntar a la ficha de una película su trailer} \\
+\hline
+Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{Comprobar que la película existe} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{Comprobar que el trailer no se haya añadido anteriormente}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{Añadir a la ficha de la película el pequeño video }\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{2a} & \multicolumn{5}{|p{9cm}|}{Si el trailer está añadido saldrá un mensaje de error}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Baja puesto que solo se hace una vez por película.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Medio, puesto que la subida de un archivo siempre lleva tiempo}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Baja.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Baja.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Media.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{consultar película} & CU-13  \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Administrador} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Secundario} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El usuario buscará el título de una película para ver su ficha y valorar} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Es la búsqueda de la ficha de una película} \\
+\hline
+Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{El usuario escribe el título en un String} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{El sistema comprueba que la película se encuentra en la base de datos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{Se le muestra al usuario la ficha técnica de la película}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{2a} & \multicolumn{5}{|p{9cm}|}{En caso de no estar la película se mostrará un mensaje diciendo que no tenemos la película que el escribe}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Elevada puesto será usado por usuarios.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Elevado, casi no se apreciaría coste en rendimiento.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Medio.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Alta de Programación de Película} & CU-14 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Administrador} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Primario, esencial} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{Que la película se haya estrenado o se estrene} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{enseñar donde pueden ir a ver la película} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Mostrar al usuario que Cines de España tienen esa película en cartelera} \\
+\hline
+Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{Primero verificar que la película existe} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{Ver que la película se ha estrenado ya}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{Ir metiéndose en todas las páginas web de los cines y ver los horarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{1a} & \multicolumn{5}{|p{9cm}|}{En caso de no existir se manda un mensaje de error}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Elevada puesto será usado por usuarios.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Bajo, pues mirar en las web de los cines el un trabajo lento}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Media.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Media.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Marcar Película Favorita} & CU-21  \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Usuario Registrado} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Opcional} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{Que la película exista} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Decir que una película le gusta mucho a un usuario} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Método para que decidir que una película te ha gustado mucho } \\
+\hline
+Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{Verificar que la película existe} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{Verificar que el usuario está registrado}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{el boolenano favorito pasa a true }\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{1a} & \multicolumn{5}{|p{9cm}|}{si la película no existe sale un mensaje de error}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{2a} & \multicolumn{5}{|p{9cm}|}{si el usuario no existe sale un mensaje de error}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Elevado, casi no se apreciaría coste en rendimiento.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Baja.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Baja.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Aceptar Alma Gemela} & CU-22 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Usuario registrado} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Secundario} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Tener personas en contacto a personas con gustos parecidos} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Encontrar a usuarios con gustos parecidos para que puedan comentar las películas} \\
+\hline
+Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{Mostrar una lista de alma gemelas, elegirla y mandar una señal de querer ser alma gemela} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{esperar una respuesta afirmativa}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{Añadir la el nombre a lista de alma gemela}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{2a} & \multicolumn{5}{|p{9cm}|}{En caso de no existir respuesta se añade como respuesta negativa}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Elevada puesto será usado por usuarios.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto pues no se tarda mucho tiempo}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Media.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Media.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Consultar Almas Gemelas} & CU-23 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Usuario registrado} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Secundario} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{Que la lista de Alma gemelas no sea vacia } \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Ver cuales son tus Almas Gemelas} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Ver cuales son tus Almas Gemelas } \\
+\hline
+Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{Ver que tu lista de Almas Gemelas no es vacia} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{Buscar el nombre que se ha escrito}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{mostrar la ficha de tu Alma Gemela}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{1a} & \multicolumn{5}{|p{9cm}|}{En caso de no existir el nombre se muestra un mensaje de error}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Elevada puesto será usado por usuarios.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Medio}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Añadir Lista de Películas} & CU-24 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Usuario registrado} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Opcional} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Tener un conjunto de películas que tiene una relación entre sí} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Conjunto de películas de relacionadas entre sí } \\
+\hline
+Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{verificar que la película exista} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{El usuario de a aceptar añadir en la lista}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{Meterla en la lista creada por el usuario}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{1a} & \multicolumn{5}{|p{9cm}|}{En caso de no existir se manda un mensaje de error}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Elevada puesto será usado por usuarios.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Media.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Consultar Lista de Películas} & CU-25 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Consultar Lista de Películas} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Opcional} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{Que la lista exista} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Ver las listas de películas creadas} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Ver las listas de pelíclas creadas} \\
+\hline
+Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{Primero verificar que la lista película existe} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{buscar en las listas existentes}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{mostrar las listas que se llaman con el nombre escrito }\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{1a} & \multicolumn{5}{|p{9cm}|}{En caso de no existir la lista se manda un mensaje de error}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Elevada puesto será usado por usuarios.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Media.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Eliminar Lista de Películas} & CU-26 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Usuario registrado} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Opcional} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{Que la lista exista} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Eliminar una lista de películas } \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Eliminar una lista de película creada por el usuario} \\
+\hline
+Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{Primero verificar que la lista de película existe} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{Ver que la lista ha sido creada por el ususario}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{borrar lista}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{1a} & \multicolumn{5}{|p{9cm}|}{En caso de no existir la lista se manda un mensaje de error}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Elevada puesto será usado por usuarios.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Media.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Añadir Película a Lista Película} & CU-27 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Usuario Registrado} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Opcional} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{Que la lista exista} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Rellenar las listas de Películas} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Es añadir a las listas de Películas películas a gusto del usuario } \\
+\hline
+Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{Primero verificar que la película existe} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{ver que la lista existe}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{Añadir a la lista en caso de que no esté repetida}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{1a} & \multicolumn{5}{|p{9cm}|}{En caso de no existir se manda un mensaje de error}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{2a} & \multicolumn{5}{|p{9cm}|}{En caso de no existir se manda un mensaje de error}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{3a} & \multicolumn{5}{|p{9cm}|}{En caso de no existir se manda un mensaje de error}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Elevada puesto será usado por usuarios.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Media.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Encontrar Almas Gemelas} & CU-28 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Temporizador} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Secundario} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{Que se haya valorado varias películas } \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Buscar a gente con gustos parecidos} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Buscar a gente con gustos parecidos} \\
+\hline
+Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{Primero mirar las películas que has valorado} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{Buscar los usuarios que mas afines al usuario registrado}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{mostrar a los 10 usuarios mas afines al usuario principal en orden decreciente}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{1a} & \multicolumn{5}{|p{9cm}|}{En caso de no tener votadas ninguna película no se mostrará ninguna alma gemela}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Elevada puesto será usado por usuarios.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Bajo, pues mirar en todas las películas valoradas va a ser lento}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Buscar Película} & CU-29 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Usuario} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Primario, esencial} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Encontrar la película que queremos} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Algoritmo de búsqueda para encontrar películas } \\
+\hline
+Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{Escribir el nombre de la película} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{verificar que exista en la base de datos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{Imprimir por pantalla que la ficha de la película}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{2a} & \multicolumn{5}{|p{9cm}|}{Si la película no está en nuestra base de datos entonces mandamos un mensaje de error}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Elevada puesto será usado por usuarios.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Consultar Cartelera} & CU-30 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Usuario} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Primario, esencial} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{Que el nombre del cine exista} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Que el usuario vea que películas hay en un cine determidado y entre en nuestra página web antes que la del cine de turno } \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Mostrar las películas que hay en un cine determinado} \\
+\hline
+Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{Primero verificar que el cine existe} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{Verificar que las películas está acutalizadas}\\
+\hline
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{Mostrar la lista de películas de ese cine}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{1a} & \multicolumn{5}{|p{9cm}|}{En caso de no existir el cine se manda un mensaje de error}\\
+\hline
+\multicolumn{1}{|p{0.5cm}}{2a} & \multicolumn{5}{|p{9cm}|}{En caso de no estar actualizadas se mirará en la página web del cine y se actualizará}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Elevada puesto será usado por usuarios.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Medio}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentarios}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
