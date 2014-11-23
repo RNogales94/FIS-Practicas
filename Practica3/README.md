@@ -11,7 +11,7 @@ Rafa:
 
 Joserra:
 --------
-* Desde: Marcar película favorita hasta: Consultar cartelera.
+* ~~Desde: Marcar película favorita hasta: Consultar cartelera.~~
 
 Lothar:
 -------
