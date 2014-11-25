@@ -101,11 +101,11 @@ Autor & Rafael Nogales Vaquero & Fecha & 24/11/14 & Versión & 1.0\\
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{consultar película} & CU-13  \\
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Consultar película} & CU-13  \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Administrador} \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Secundario} \\
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Primario, Esencial} \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{} \\
 \hline
@@ -113,29 +113,29 @@ Autor & Rafael Nogales Vaquero & Fecha & 24/11/14 & Versión & 1.0\\
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito} \\
 \hline
-\multicolumn{6}{|p{10cm}|}{El usuario buscará el título de una película para ver su ficha y valorar} \\
+\multicolumn{6}{|p{10cm}|}{El administrador buscará el título de una película para poder editarla} \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Resumen} \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Es la búsqueda de la ficha de una película} \\
 \hline
-Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+Autor & Rafael Nogales Vaquero & Fecha & 24/11/14 & Versión & 1.0\\
 \hline
 \multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
 \hline
-\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{El usuario escribe el título en un String} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{El sistema comprueba que la película se encuentra en la base de datos}\\
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{El administrador escribe el título en un buscador} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{El sistema comprueba que la película se encuentra en la base de datos}\\
 \hline
-\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{Se le muestra al usuario la ficha técnica de la película}\\
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{Se le muestra al admin la ficha técnica de la película}\\
 \hline
 \multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
 \hline
-\multicolumn{1}{|p{0.5cm}}{2a} & \multicolumn{5}{|p{9cm}|}{En caso de no estar la película se mostrará un mensaje diciendo que no tenemos la película que el escribe}\\
+\multicolumn{1}{|p{0.5cm}}{2a} & \multicolumn{5}{|p{9cm}|}{En caso de no estar la película se mostrará un aviso de error}\\
 \hline
 \multicolumn{6}{|p{10cm}|}{Otros datos}\\
 \hline
-\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Elevada puesto será usado por usuarios.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Elevado, casi no se apreciaría coste en rendimiento.}\\
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Media} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Elevado}\\
 \hline
-\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Medio.}\\
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Medio.}\\
 \hline
 \multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta.}\\
 \hline
@@ -146,6 +146,7 @@ Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
 \end{tabular}
 \end{table}
 
+%Alta de Programacion de Pelicula
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
@@ -153,7 +154,7 @@ Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
 \hline
 \multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Administrador} \\
 \hline
-\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Primario, esencial} \\
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Secundario} \\
 \hline
 \multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{Que la película se haya estrenado o se estrene} \\
 \hline
@@ -161,19 +162,19 @@ Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito} \\
 \hline
-\multicolumn{6}{|p{10cm}|}{enseñar donde pueden ir a ver la película} \\
+\multicolumn{6}{|p{10cm}|}{Añadir cines y horarios en los que ir a ver la película} \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Resumen} \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Mostrar al usuario que Cines de España tienen esa película en cartelera} \\
+\multicolumn{6}{|p{10cm}|}{Añadir a la base de datos que cines tienen la película en cartelera} \\
 \hline
-Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+Autor & Rafael Nogales Vaquero & Fecha & 24/11/14 & Versión & 1.0\\
 \hline
 \multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
 \hline
-\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{Primero verificar que la película existe} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{Ver que la película se ha estrenado ya}\\
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{Verificar que la película existe} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{Verificar que la película se ha estrenado ya}\\
 \hline
-\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{Ir metiéndose en todas las páginas web de los cines y ver los horarios}\\
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{Buscar en las bases de datos de los cines los horarios y añadirlos}\\
 \hline
 \multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
 \hline
@@ -181,9 +182,9 @@ Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
 \hline
 \multicolumn{6}{|p{10cm}|}{Otros datos}\\
 \hline
-\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Elevada puesto será usado por usuarios.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Bajo, pues mirar en las web de los cines el un trabajo lento}\\
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Baja} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Medio}\\
 \hline
-\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Media.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Media.}\\
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Baja} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Baja}\\
 \hline
 \multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Media.}\\
 \hline
@@ -193,6 +194,10 @@ Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
 \hline
 \end{tabular}
 \end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COMIENZO DE JOSE RAMON  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
@@ -681,3 +686,9 @@ Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
 \hline
 \end{tabular}
 \end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIN DE JOSE RAMON  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
