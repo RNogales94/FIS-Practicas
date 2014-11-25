@@ -13,13 +13,13 @@
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito} \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Consiste en Añadir películas para que las gente las valore} \\
+\multicolumn{6}{|p{10cm}|}{Consiste en añadir películas para que las gente las valore} \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Resumen} \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Es la manera de añadir la una película para que el usuario la valore} \\
 \hline
-Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+Autor & Rafael Nogales Vaquero & Fecha & 24/11/14 & Versión & 1.0\\
 \hline
 \multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
 \hline
@@ -29,13 +29,13 @@ Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
 \hline
 \multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
 \hline
-\multicolumn{1}{|p{0.5cm}}{2a} & \multicolumn{5}{|p{9cm}|}{Si la película está añadida saldrá un error}\\
+\multicolumn{1}{|p{0.5cm}}{2a} & \multicolumn{5}{|p{9cm}|}{Si la película ya existe se dará un aviso}\\
 \hline
 \multicolumn{6}{|p{10cm}|}{Otros datos}\\
 \hline
-\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Elevada puesto será usado por el usuario.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Elevado, no se aprecia en el coste de rendimiento.}\\
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Baja} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto}\\
 \hline
-\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alta.}\\
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alta}\\
 \hline
 \multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta.}\\
 \hline
@@ -46,6 +46,8 @@ Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
 \end{tabular}
 \end{table}
 
+
+% Añadir Trailer de Peliculas
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
@@ -61,27 +63,27 @@ Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
 \hline
 \multicolumn{6}{|p{10cm}|}{Proposito} \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Consiste en enseñar al usuario el trailer para que vaya a ver la película y después la valore} \\
+\multicolumn{6}{|p{10cm}|}{Consiste en enseñar al usuario el trailer de la película} \\
 \hline
 \multicolumn{6}{|p{10cm}|}{Resumen} \\
 \hline
-\multicolumn{6}{|p{10cm}|}{Es adjuntar a la ficha de una película su trailer} \\
+\multicolumn{6}{|p{10cm}|}{Adjunta a la ficha de una película su trailer} \\
 \hline
-Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
+Autor & Rafael Nogales Vaquero & Fecha & 24/11/14 & Versión & 1.0\\
 \hline
 \multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
 \hline
-\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{Comprobar que la película existe} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{Comprobar que el trailer no se haya añadido anteriormente}\\
+\multicolumn{1}{|p{0.5cm}|}{1} & \multicolumn{2}{p{3cm}}{Comprobar que la película exista} & \multicolumn{1}{|p{0.5cm}|}{2} & \multicolumn{2}{p{3cm}|}{Comprobar que el trailer no se haya añadido anteriormente}\\
 \hline
-\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{Añadir a la ficha de la película el pequeño video }\\
+\multicolumn{1}{|p{0.5cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{0.5cm}|}{3} & \multicolumn{2}{p{3cm}|}{Añadir a la ficha de la película el pequeño video.}\\
 \hline
 \multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
 \hline
-\multicolumn{1}{|p{0.5cm}}{2a} & \multicolumn{5}{|p{9cm}|}{Si el trailer está añadido saldrá un mensaje de error}\\
+\multicolumn{1}{|p{0.5cm}}{2a} & \multicolumn{5}{|p{9cm}|}{Si la película no existe o ya tiene trailer se da un aviso y se impide continuar.}\\
 \hline
 \multicolumn{6}{|p{10cm}|}{Otros datos}\\
 \hline
-\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Baja puesto que solo se hace una vez por película.} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Medio, puesto que la subida de un archivo siempre lleva tiempo}\\
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Baja} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Medio.}\\
 \hline
 \multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Baja.} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Baja.}\\
 \hline
@@ -94,6 +96,8 @@ Autor & Jose Ramón Trillo & Fecha & 24/11/14 & Versión & 1.0\\
 \end{tabular}
 \end{table}
 
+
+%Constultar Película
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
