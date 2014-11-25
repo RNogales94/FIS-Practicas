@@ -1,0 +1,428 @@
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Baja de Usuario} & CU-1 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Administrador(I)} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Primario, Esencial} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{El Usuario debe ser un Usuario registrado en el sistema.} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{El Usuario queda fuera de la lista de usuarios registrados en el sistema, perdiendo todos sus beneficios.} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Dar de baja a un Usuario registrado en el sistema.} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El Administrador da de baja, por algún motivo, a algún Usuario registrado en el sistema eliminando sus datos de él.} \\
+\hline
+Autor &Elena Toro & Fecha &24/11/2014 & Versión &1.0 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{1} & \multicolumn{2}{p{3cm}}{El administrador solicita dar de baja al Usuario.} & \multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}|}{}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{2} & \multicolumn{2}{p{3cm}|}{Se identifica al Usuario. Incluir CU-4 (Identificarse).}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{3} & \multicolumn{2}{p{3cm}|}{Se elimina la información asociada al Usuario. Incluir CU-6 (Baja en Registro).}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{4} & \multicolumn{2}{p{3cm}|}{Se informa que el Usuario se ha dado de baja en el sistema.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{5} & \multicolumn{2}{p{3cm}}{El Administrador informa al Usuario de que se ha realizado la baja.} & \multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}|}{}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{1cm}}{} & \multicolumn{5}{|p{9cm}|}{}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Alta} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentario}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Consulta de Usuario} & CU-2 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Administrador(I)} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Primario, Esencial} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{El Usuario debe ser un Usuario registrado en el sistema.} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{Obtención de datos relativos al Usuario.} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Obtener información sobre los datos personales de un Usuario del sistema.} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El Administrador solicita información sobre un Usuario y el sistema le proporciona la información que tiene sobre él.} \\
+\hline
+Autor &Elena Toro & Fecha &24/11/2014 & Versión &1.0 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{1} & \multicolumn{2}{p{3cm}}{El Administrador solicita información sobre un Usuario del sistema.} & \multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}|}{}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{2} & \multicolumn{2}{p{3cm}|}{Se identifica al Usuario. Incluir CU-4 (Identificarse).}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{3} & \multicolumn{2}{p{3cm}|}{Se obtienen los datos del Usuario y se muestran al Administrador.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{1cm}}{} & \multicolumn{5}{|p{9cm}|}{}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Alta} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentario}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Pasar Usuario a VIP} & CU-3 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Administrador(I)} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Primario, Esencial} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{Ser un Usuario registrado en el sistema.} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{El Usuario pasa a ser un Usuario VIP.} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Modificar alguno de los datos y características del Usuario.} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El Administrador cambia las características correspondientes del Usuario para que pase a ser un Usuario VIP en el sistema.} \\
+\hline
+Autor &Elena Toro & Fecha &24/11/2014 & Versión &1.0 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{1} & \multicolumn{2}{p{3cm}}{El Administrador solicita cambiar las características del Usuario.} & \multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}|}{}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{2} & \multicolumn{2}{p{3cm}|}{Se identifica al Usuario. Incluir CU-4 (Identificarse).}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{3} & \multicolumn{2}{p{3cm}|}{Se modifican los datos correspondientes para convertirlo en Usuario VIP.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{4} & \multicolumn{2}{p{3cm}|}{Se informa que el proceso se ha realizado correctamente.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{5} & \multicolumn{2}{p{3cm}}{El Administrador informa al Usuario del cambio realizado.} & \multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}|}{}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{1cm}}{} & \multicolumn{5}{|p{9cm}|}{}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Moderada} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Moderada} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Moderada}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentario}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Identificarse} & CU-4 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Usuario registrado(I)} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Primario, Esencial} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{Obtención de datos del Usuario registrado.} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Identificar si una persona es un Usuario registrado en el sistema.} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El Usuario registrado en el sistema muestra sus datos personales y se comprobará en el sistema si estos datos pertenecen a algún Usuario registrado o no.} \\
+\hline
+Autor &Elena Toro & Fecha &24/11/2014 & Versión &1.0 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{1} & \multicolumn{2}{p{3cm}}{El Usuario registrado se identifica.} & \multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}|}{}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{2} & \multicolumn{2}{p{3cm}|}{Se buscan los datos del Usuario.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{3} & \multicolumn{2}{p{3cm}|}{Se identifica al Usuario registrado como Usuario registrado actual del sistema.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{1cm}}{3a} & \multicolumn{5}{|p{9cm}|}{El Usuario registrado no existe o ha sido dado de baja.
+1. El sistema informa del estado actual del Usuario.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Alta} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentario}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Alta en registro} & CU-5 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Usuario registrado(I)} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Primario, Esencial} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{El Usuario no debe estar registrado previamente.} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{El Usuario quedará registrado y podrá comentar y valorar películas.} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Obtener privilegios de Usuario Identificado para poder acceder a las acciones de comentar y valorar películas.} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El Usuario no identificado completa los campos pertenecientes a dicha acción y se registra en el sistema. El Usuario obtendrá los mismos privilegios que un Usuario identificado posee.} \\
+\hline
+Autor &Elena Toro & Fecha &24/11/2014 & Versión &1.0 \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{1} & \multicolumn{2}{p{3cm}}{El Usuario envía su solicitud de registro al sistema.} & \multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}|}{}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{2} & \multicolumn{2}{p{3cm}|}{El sistema envía al Usuario una serie de pasos a dar para efectuar la confirmación de la acción.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{3} & \multicolumn{2}{p{3cm}}{El Usuario realiza los pasos propuestos por el sistema para terminar con su registro.} & \multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}|}{}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{4} & \multicolumn{2}{p{3cm}|}{Se comprueba que los datos sean correctos.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{5} & \multicolumn{2}{p{3cm}|}{Se almacena la información en el sistema.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{6} & \multicolumn{2}{p{3cm}|}{Se informa sobre la correcta modificación de los datos.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{1cm}}{} & \multicolumn{5}{|p{9cm}|}{}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Alta} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentario}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Baja en registro} & CU-6 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Usuario registrado(I)} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Primario, Esencial} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{El Usuario dejará de ser un Usuario registrado en el sistema.} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Un Usuario registrado solicita su baja en el sistema.} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El Usuario solicita su baja en el sistema y el sistema elimina sus datos de él.} \\
+\hline
+Autor &Elena Toro & Fecha &24/11/2014 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{1} & \multicolumn{2}{p{3cm}}{El Usuario registrado indica que quiere darse de baja en el sistema.} & \multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}|}{}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{2} & \multicolumn{2}{p{3cm}|}{Se identifica al Usuario. Incluir CU-4 (Identificarse)}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{3} & \multicolumn{2}{p{3cm}|}{Se elimina la información asociada al Usuario. Incluir CU-1 (Baja de Usuario).}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{4} & \multicolumn{2}{p{3cm}|}{Se informa que el Usuario se ha dado de baja en el sistema.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{5} & \multicolumn{2}{p{3cm}}{El Administrador informa al Usuario de que se ha realizado la baja.} & \multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}|}{}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{1cm}}{} & \multicolumn{5}{|p{9cm}|}{}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Alta} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentario}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Aceptar Película añadida por Usuario VIP} & CU-7 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Administrador(I)} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Secundario, Esencial} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{El Usuario VIP debe haber añadido previamente una película.} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{La película quedará añadida en la lista de películas a valorar del sistema.} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Dar de alta una película nueva en el sistema.} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Un Usuario VIP solicita la agregación de una película en el sistema. El Administrador comprobará si son correctos los datos de esa película y, en ese caso, la aceptará y la añadirá al sistema.} \\
+\hline
+Autor &Elena Toro & Fecha &24/11/2014 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{1} & \multicolumn{2}{p{3cm}}{El Administrador desea dar de alta una película en el sistema.} & \multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}|}{}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{2} & \multicolumn{2}{p{3cm}}{El Administrador accede al sistema y procede a dar de alta la película.} & \multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}|}{}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{3} & \multicolumn{2}{p{3cm}}{El Administrador introduce los datos de dicha película en el sistema.} & \multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}|}{}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{4} & \multicolumn{2}{p{3cm}|}{El sistema comprueba que la película no estaba en la web.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{5} & \multicolumn{2}{p{3cm}|}{Se guarda la información de la película.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{6} & \multicolumn{2}{p{3cm}|}{Se informa sobre la correcta subida de la película al sistema.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{1cm}}{} & \multicolumn{5}{|p{9cm}|}{}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Moderada} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentario}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{2cm}|}{Casos de uso} & \multicolumn{3}{p{7cm}|}{Añadir Premio a Película} & CU-10 \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Actores} & \multicolumn{4}{p{8cm}|}{Administrador(I)} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{Secundario, Esencial} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Precondición} & \multicolumn{4}{p{8cm}|}{La película debe ser una película existente en el sistema.} \\
+\hline
+\multicolumn{2}{|p{2cm}|}{Postcondición} & \multicolumn{4}{p{8cm}|}{Los premios de la pelicula quedan modificados.} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Proposito} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Modificar los datos respectivos a los premios en alguna de las películas gestionadas por el sistema.} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{Resumen} \\
+\hline
+\multicolumn{6}{|p{10cm}|}{El Administrador modifica los premios de una película.} \\
+\hline
+Autor &Elena Toro & Fecha &24/11/2014 & Versión & 1.0\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujo Principal}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{1} & \multicolumn{2}{p{3cm}}{El Administrador solicita modificar los datos de una película.} & \multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}|}{}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{2} & \multicolumn{2}{p{3cm}|}{Se comprueba que la película existe.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{3} & \multicolumn{2}{p{3cm}|}{Se muestra la información de la película a modificar.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{4} & \multicolumn{2}{p{3cm}}{El Administrador añade el premio correspondiente.} & \multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}|}{}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{5} & \multicolumn{2}{p{3cm}|}{Se guarda la modificación en la información de la película.}\\
+\hline
+\multicolumn{1}{|p{1cm}|}{} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{1cm}|}{6} & \multicolumn{2}{p{3cm}|}{Se informa sobre la correcta modificación de la película en el sistema.}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Flujos Alternativos}\\
+\hline
+\multicolumn{1}{|p{1cm}}{} & \multicolumn{5}{|p{9cm}|}{}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Otros datos}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Frecuencia esp.} & \multicolumn{2}{p{3cm}}{Moderada} & \multicolumn{1}{|p{2cm}|}{Rendimiento} & \multicolumn{2}{p{3cm}|}{Alto}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Importancia} & \multicolumn{2}{p{3cm}}{Alta} & \multicolumn{1}{|p{2cm}|}{Urgencia} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{1}{|p{2cm}|}{Estado} & \multicolumn{2}{p{3cm}}{} & \multicolumn{1}{|p{2cm}|}{Estabilidad} & \multicolumn{2}{p{3cm}|}{Alta}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{Comentario}\\
+\hline
+\multicolumn{6}{|p{10cm}|}{}\\
+\hline
+\end{tabular}
+\end{table}
