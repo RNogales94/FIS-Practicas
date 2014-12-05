@@ -25,7 +25,7 @@
 	\subsection*{Gestión de películas por usuarios}
 	\textbf{Problema:} Los \textbf{usuarios} podrán buscar \textbf{películas} en el sistema además de consultar la \textbf{cartelera} de \textbf{Cines}, solo si están \textbf{registrados} podrán puntuarla y tan solo los \textbf{usuarios VIP} podrán añadir y criticar películas.\\
 	\textbf{Conceptos:} Usuario, Usuario registrado, Usuario VIP, Cines, Películas, Cartelera.\\
-	Relaciones:
+\textbf{	Relaciones:}
 		\begin{itemize}
 			\item Un cine tiene una cartelera.
 			\item Todos los usuarios buscan películas.
@@ -33,12 +33,21 @@
 			\item Los registrados y los VIP pueden puntuar las películas.
 			\item Los VIP pueden criticar y añadir películas.		
 		\end{itemize}
-		\begin{figure*}[tbph]
-			\centering
-			\includegraphics[width=0.9\linewidth]{./C-PeliculasUsuarios}\\
-			Gestión de peliculas por usuarios.
-		\end{figure*}
+			\includegraphics[width=1\linewidth]{./C-PeliculasUsuarios}
 	\subsection*{Gestión de comunidades}
+	\textbf{Problema:} Un \textbf{usuario registrado} se va a encargar de crear \textbf{comunidades} y consultarlas. Los \textbf{usuarios} pueden pedir ser \textbf{miembro} de una \textbf{comunidad}, y si son \textbf{dueños} de una de ellas admitir otros \textbf{usuarios} en ellas. Por último pueden listar \textbf{películas} criticadas por una \textbf{comunidad} o anádidas por la misma.\\
+	\textbf{Conceptos:} Usuario registrado, Comunidades, Miembro, Dueño.
+	\textbf{Relaciones:}
+		\begin{itemize}
+			\item Los usuarios crean comunidades.
+			\item Los usuarios consultan comunidades.
+			\item Los usuarios son miembros de otras comunidades.
+			\item Los usuarios son dueños de comunidades.
+			\item Los usuarios pueden listar películas.
+			\item Las películas pueden ser criticadas por la comunidad.
+			\item Las películas pueden ser añadidas por la comunidad.
+		\end{itemize}
+		\includegraphics[width=1\linewidth]{./C-Comunidades}
 \section{Driagramas de Secuencia}
 	\subsection*{Gestión de usuarios}
 	\subsection*{Gestión de películas}
