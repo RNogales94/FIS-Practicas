@@ -22,6 +22,6 @@ Joserra:
 
 Lothar:
 -------
-* Diagrama de conceptos de películas por usuario. <--
+* ~~Diagrama de conceptos de películas por usuario. <--~~
 * Diagrama de conceptos de Comunidades.
 * Diagrama de secuencia de Comunidades.
