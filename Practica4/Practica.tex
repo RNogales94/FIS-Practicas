@@ -20,9 +20,19 @@
 \section{Driagramas de Conceptos}
 	\subsection*{Gestión de usuarios}
 	\subsection*{Gestión de películas}
-	
-	\includegraphics[width=1\linewidth]{./C-GestionDePeliculas}
-	
+	\textbf{Problema:} Los \textbf{administradores} necesitan mantener un orden en las \textbf{películas} del sistema.
+	 Tan solo los \textbf{usuarios VIP} podrán añadir películas.\\
+	\textbf{Conceptos:} Administrador, Usuario VIP, Solicitudes de añadir Películas, Películas.\\
+	\textbf{	Relaciones:}
+		\begin{itemize}
+			\item Los administradores añaden distribuciones de peliculas.
+			\item Todos los usuarios (incluídos los administradores) consultan películas.
+			\item Los administradores añaden estrenos de películas.
+			\item Los administradores añaden premios de películas.
+			\item Los administradores añaden trailers de películas.
+			\item Los VIP pueden añadir películas y los administradores aceptar o denegar las solicitudes.		
+		\end{itemize}
+	\includegraphics[width=0.7\linewidth]{./C-GestionDePeliculas}
 	\subsection*{Gestión de cartelera}
 	\subsection*{Gestión de Perfil}
 	\subsection*{Gestión de películas por usuarios}
