@@ -11,7 +11,7 @@ Rafa:
 -----
 * ~~Diagrama de conceptos de Películas.~~
 * ~~Diagrama de conceptos de Cartelera.~~
-* Diagrama de secuencia de Cartelera.
+* ~~Diagrama de secuencia de Cartelera.~~
 
 Joserra:
 --------
