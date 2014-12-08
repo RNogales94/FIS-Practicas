@@ -3,9 +3,9 @@ Trabajo a realizar:
 
 Elena:
 ------
-* Diagrama de conceptos de usuario.
-* Diagrama de secuencia de usuario.
-* Diagrama de secuencia de películas.
+* ~~Diagrama de conceptos de usuario.~~
+* ~~Diagrama de secuencia de usuario.~~
+* ~~Diagrama de secuencia de películas.~~
 
 Rafa:
 -----
