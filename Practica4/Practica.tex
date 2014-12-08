@@ -20,6 +20,16 @@
 
 \section{Driagramas de Conceptos}
 	\subsection*{Gestión de usuarios}
+		\textbf{Problema:} Los \textbf{administradores} necesitan mantener un control en los \textbf{usuarios} del sistema.
+Los \textbf{usuarios registrados} deberán identificarse y podrán darse de alta o de baja en registro.\\
+\textbf{Conceptos:} Administrador, Usuario, Usuario Registrado.\\
+\textbf{	Relaciones:}
+	\begin{itemize}
+    	\item El administrador controla los usuarios del sistema.
+        \item El administrador gestiona los usuarios registrados en el sistema.
+        \item Los usuarios, al darse de alta, pasan a formar parte de los usuarios registrados en el sistema.      	
+    \end{itemize}
+	\includegraphics[width=1\linewidth]{./C-Usuarios}
 
 
 	%Rafa Nogales
@@ -52,7 +62,7 @@
 			\item Los administradores dan de alta cines.
 			\item Los administradores dan de baja cines.
 		\end{itemize}
-	\includegraphics[width=0.7\linewidth]{./C-Cartelera}
+	\includegraphics[width=1\linewidth]{./C-Cartelera}
 	
 	
 	\subsection*{Gestión de Perfil}
@@ -91,7 +101,26 @@
 		
 \section{Driagramas de Secuencia}
 	\subsection*{Gestión de usuarios}
+		\begin{enumerate}
+			\item El administrador puede dar de baja a un usuario.
+    			\item El administrador puede consultar la información de un usuario.
+    			\item El administrador puede pasar un usuario a VIP.
+    			\item Un usuario registrado tiene la obligación de identificarse.
+    			\item Un usuario registrado puede darse de alta en registro.
+    			\item Un usuario registrado puede darse de baja en registro.
+		\end{enumerate}
+		\includegraphics[width=1\linewidth]{./S-Usuarios}
 	\subsection*{Gestión de películas}
+		\begin{enumerate}
+   	 		\item El Administrador puede aceptar una película añadida por un usuario VIP.
+   		    \item El Administrador puede añadir una distribución de una película.
+        		\item El Administrador puede añadir en el sistema el estreno de una película.
+        		\item El Administrador puede añadirle un premio a una película.
+        		\item El Administrador puede añadir una película en el sistema.
+        		\item El Administrador puede añadirle los trailers a una película.
+        		\item El Administrador puede consultar una película para obtener su información.
+    		\end{enumerate}
+    		\includegraphics[width=1\linewidth]{./S-peliculas}
 	\subsection*{Gestión de cartelera}
 	\begin{enumerate}
 		\item El administrador registra un cine en el sistema.
