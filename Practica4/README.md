@@ -15,9 +15,9 @@ Rafa:
 
 Joserra:
 --------
-* Diagrama de conceptos de perfil.
-* Diagrama de secuencia de perfil.
-* Diagrama de secuencia de películas por usuario.
+* ~~Diagrama de conceptos de perfil.~~
+* ~~Diagrama de secuencia de perfil.~~
+* ~~Diagrama de secuencia de películas por usuario.~~
 
 
 Lothar:
