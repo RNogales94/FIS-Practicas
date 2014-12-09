@@ -18,8 +18,8 @@
 \begin{document}
 \maketitle
 
-\section{Driagramas de Conceptos}
-	\subsection*{Gestión de usuarios}
+\section{Diagramas de Conceptos}
+	\subsection*{Gestión de usuarios. \textit{Elena Toro Pérez}}
 		\textbf{Problema:} Los \textbf{administradores} necesitan mantener un control en los \textbf{usuarios} del sistema.
 Los \textbf{usuarios registrados} deberán identificarse y podrán darse de alta o de baja en registro.\\
 \textbf{Conceptos:} Administrador, Usuario, Usuario Registrado.\\
@@ -33,7 +33,7 @@ Los \textbf{usuarios registrados} deberán identificarse y podrán darse de alta
 
 
 	%Rafa Nogales
-	\subsection*{Gestión de películas}
+	\subsection*{Gestión de películas. \textit{Rafael Nogales Vaquero}}
 	\textbf{Problema:} Los \textbf{administradores} necesitan mantener un orden en las \textbf{películas} del sistema.
 	 Tan solo los \textbf{usuarios VIP} podrán añadir películas.\\
 	\textbf{Conceptos:} Administrador, Usuario VIP, Solicitudes de añadir Películas, Películas.\\
@@ -50,7 +50,7 @@ Los \textbf{usuarios registrados} deberán identificarse y podrán darse de alta
 	
 	
 	%Rafa Nogales
-	\subsection*{Gestión de cartelera}
+	\subsection*{Gestión de cartelera. \textit{Rafael Nogales Vaquero}}
 	\textbf{Problema:} Los \textbf{administradores} necesitan administrar los \textbf{cines} del sistema para saber en que horarios se proyectan 
 	las \textbf{películas} en cada cine (\textbf{Programación}).
 	\textbf{Conceptos:} Administrador, Cine, Programación, Películas.\\
@@ -63,9 +63,8 @@ Los \textbf{usuarios registrados} deberán identificarse y podrán darse de alta
 			\item Los administradores dan de baja cines.
 		\end{itemize}
 	\includegraphics[width=1\linewidth]{./C-Cartelera}
-	
-	
-	\subsection*{Gestión de perfil}
+		
+	\subsection*{Gestión de Perfil. \textit{Jose Ramón Trillo Vilchez}}
 	\textbf{Problema:} Los \textbf{usuario registrado} necesita gestionar la información que le muesta al sistema.
 El \textbf{temporizador} se encarga que en un tiempo determinado se busque una cantidad de posibles almas gemelas\\
 \textbf{Conceptos:} Temporizador, Usuario Registrado.\\
@@ -73,11 +72,10 @@ El \textbf{temporizador} se encarga que en un tiempo determinado se busque una c
 	\begin{itemize}
     	\item El temporizador determina el tiempo que tiene un buscador de encontrar posibles almas gemelas para que luego se muestren a los usuarios.      	
     \end{itemize}
-
-
+    		\includegraphics[width=1\linewidth]{./C-Perfil}
 
 	%Lothar Soto
-	\subsection*{Gestión de películas por usuarios}
+	\subsection*{Gestión de películas por usuarios. \textit{Lothar Soto Palma}}
 	\textbf{Problema:} Los \textbf{usuarios} podrán buscar \textbf{películas} en el sistema además de consultar la \textbf{cartelera} de \textbf{Cines}, solo si están \textbf{registrados} podrán puntuarla y tan solo los \textbf{usuarios VIP} podrán añadir y criticar películas.\\
 	\textbf{Conceptos:} Usuario, Usuario registrado, Usuario VIP, Cines, Películas, Cartelera.\\
 \textbf{	Relaciones:}
@@ -91,7 +89,7 @@ El \textbf{temporizador} se encarga que en un tiempo determinado se busque una c
 			\includegraphics[width=1\linewidth]{./C-PeliculasUsuarios}
 	
 	%Lothar Soto	
-	\subsection*{Gestión de comunidades}
+	\subsection*{Gestión de comunidades. \textit{Lothar Soto Palma}}
 	\textbf{Problema:} Un \textbf{usuario registrado} se va a encargar de crear \textbf{comunidades} y consultarlas. Los \textbf{usuarios} pueden pedir ser \textbf{miembro} de una \textbf{comunidad}, y si son \textbf{dueños} de una de ellas admitir otros \textbf{usuarios} en ellas. Por último pueden listar \textbf{películas} criticadas por una \textbf{comunidad} o anádidas por la misma.\\
 	\textbf{Conceptos:} Usuario registrado, Comunidades, Miembro, Dueño.
 	\textbf{Relaciones:}
@@ -106,8 +104,8 @@ El \textbf{temporizador} se encarga que en un tiempo determinado se busque una c
 		\end{itemize}
 		\includegraphics[width=1\linewidth]{./C-Comunidades}
 		
-\section{Driagramas de Secuencia}
-	\subsection*{Gestión de usuarios}
+\section{Diagramas de Secuencia}
+	\subsection*{Gestión de usuarios. \textit{Elena Toro Pérez}}
 		\begin{enumerate}
 			\item El administrador puede dar de baja a un usuario.
     			\item El administrador puede consultar la información de un usuario.
@@ -117,7 +115,7 @@ El \textbf{temporizador} se encarga que en un tiempo determinado se busque una c
     			\item Un usuario registrado puede darse de baja en registro.
 		\end{enumerate}
 		\includegraphics[width=1\linewidth]{./S-Usuarios}
-	\subsection*{Gestión de películas}
+	\subsection*{Gestión de películas. \textit{Elena Toro Pérez}}
 		\begin{enumerate}
    	 		\item El Administrador puede aceptar una película añadida por un usuario VIP.
    		    \item El Administrador puede añadir una distribución de una película.
@@ -128,7 +126,7 @@ El \textbf{temporizador} se encarga que en un tiempo determinado se busque una c
         		\item El Administrador puede consultar una película para obtener su información.
     		\end{enumerate}
     		\includegraphics[width=1\linewidth]{./S-peliculas}
-	\subsection*{Gestión de cartelera}
+	\subsection*{Gestión de cartelera. \textit{Rafael Nogales Vaquero}}
 	\begin{enumerate}
 		\item El administrador registra un cine en el sistema.
 		\item El administrador puede dar de alta la programación de una película en algún cine.
@@ -138,7 +136,7 @@ El \textbf{temporizador} se encarga que en un tiempo determinado se busque una c
 	\end{enumerate}
 			\includegraphics[width=1\linewidth]{./Sec-Cartelera}
 
-	\subsection*{Gestión de perfil}
+	\subsection*{Gestión de Perfil. \textit{Jose Ramón Trillo Vilchez}}
 	\begin{enumerate}
 		\item El usuario registrado debe de meter datos en su perfil.
     		\item El usuario registrado puede consultar su información.
@@ -151,8 +149,9 @@ El \textbf{temporizador} se encarga que en un tiempo determinado se busque una c
     		\item el usuario registrado puede añadir una película a una lista de peluculas
     		\item el temporizador deber poner un limite a la hora de encontrar almas gemelas
 	\end{enumerate}
+	\includegraphics[width=1\linewidth]{./S-Perfil}
 		
-	\subsection*{Gestión de películas por usuarios}
+	\subsection*{Gestión de películas por usuarios. \textit{Jose Ramón Trillo Vilchez}}
 	\begin{enumerate}
 		\item El usuario puede buscar una película determinada.
     		\item El usuario puede consultar una cartelera en un cine determinado.
@@ -160,7 +159,9 @@ El \textbf{temporizador} se encarga que en un tiempo determinado se busque una c
     		\item Un usuario VIP puede añadir una película.
     		\item Un usuario VIP puede criticar una película determinada.
 	\end{enumerate}
-	\subsection*{Gestión de comunidades}
+	\includegraphics[width=1\linewidth]{./S-Peliculasusuarios}
+		
+	\subsection*{Gestión de comunidades. \textit{Lothar Soto Palma}}
 	\begin{enumerate}
 		\item El usuario registrado ingresa en el sistema.
 		\item Se dirige al apartado dedicado a la gestión de comunidades.
