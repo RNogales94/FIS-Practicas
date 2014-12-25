@@ -17,28 +17,325 @@
 
 \begin{document}
 \maketitle
-
-\section{Contratos}
+\section{Contratos. Elena Toro Pérez}
+\section{Contratos. Rafael Nogales Vaquero}
+\section{Contratos. Jose Ramón Trillo Vilchez}
+\section{Contratos. Lothar Soto Palma}
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
-\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{3}{p{8cm}|}{}\\
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{resultadoConsulta=consultaCartelera(criterioConsulta)}}\\
 \hline
-\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{8cm}|}{} \\
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Consulta la cartelera de un determinado cine haciendo uso de ciertos criterios.} \\
 \hline
-\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{} \\
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
 \hline
-\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{8cm}|}{} \\
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
 \hline
-\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{8cm}|}{} \\
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
 \hline
-\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{8cm}|}{} \\
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item No existe una cartelera en el sistema.
+\end{itemize}} \\
 \hline
-\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{8cm}|}{} \\
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{La salida debe contener una lista de películas que coincidan con los criterios de consulta dados como parametro.} \\
 \hline
-\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{8cm}|}{} \\
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{El sistema debe albergar al menos una cartelera para su consulta.} \\
 \hline
-\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{8cm}|}{} \\
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{puntuarPelícula(idUsuarioR, idPelícula, puntos)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Que el usuario de una valoración a una determinada película del sistema.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item No existe un usuario en el sistema.
+\item No existe una película en el sistema.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Se modifica la instancia de la película existente, se le añade el valor de puntos y se realiza una media.
+\end{itemize}} \\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{propuestaNuevaPelícula(idUsuarioVIP, infoPelícula)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Un usuario VIP añade una proposición de película a la lista de proposiciones del sistema para posteriormente ser evaluada por el administrador y añadida o no.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{El sistema debe albergar una lista de películas propuestas a la que solo puede acceder un administrador.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Se crea una instancia de Película.
+\item Se modifica dicha instancia con infoPelícula.
+\item Se include dicha instancia en lista de propuestos.
+\end{itemize}} \\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{críticaPelícula(idUsuarioVIP, idPelícula, infoCrítica)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Un usuario VIP añade una crítica a una película determinada del sistema.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Si no existe usuario VIP.
+\item Si no existe Película.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Se crea una instancia "cri" de crítica.
+\item Se modifica dicha instancia con la información infoCrítica.
+\item Se crea un enlace entre cri y el usuario VIP identificada por idUsuarioVIP.
+\item Se crea un enlace entre cri y la Película identificada por idPelícula.
+\end{itemize}} \\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{3}{p{10cm}|}{\textbf{nuevaComunidad(idURPropietario, nombreComunidad)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Un usuario crea una nueva comunidad.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Si no existe el usuario.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Se crea una nueva instancia de Comunidad "co".
+\item Se modifica co.nombre a nombreComunidad.
+\item Se crea un enlace entre co y el usuario identificado por idURPropietario.
+\end{itemize}}\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{pedirEntradaComunidad(idComunidad, idURSolicitante)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Un usuario realiza una petición para ser admitido en una comunidad determinada.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Si la comunidad no existe.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{Supongamos que cada Comunidad tiene una lista de peticiones.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Se crea una nueva instancia de petición "p".
+\item Se crea un enlace entre la p y la Comunidad identificada por idComunidad.
+\end{itemize}} \\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{admitirEnComunidad(idComunidad, idURAdmitido)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Aceptar una petición realizada con anterioridad.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Si no existe el usuario a admitir.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{Es necesario la existencia de la petición en el sistema.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Se crea un enlacen entre el usuario identificado por idURAdmitido y Comunidad identificada por idComunidad.
+\end{itemize}} \\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{listaMiembros = verListaMiembros(idComunidad)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Permite  obtener una lista de miembros de una comunidad determinada en el sistema.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Si la comunidad no existe.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{Lista de usuarios pertenecientes a la Comunidad.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{listaMiembrosPendientes = verListaSolicitudesPendientes(idComunidad)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Permite obtener una lista de miembros que aún no han sido admitidos en la comunidad.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Si la comunidad no existe.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{Lista de usuarios que están pendientes de ser aceptados o no en la comunidad.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{listaPelículasCriticadas = listarPelículas(idComunidad)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Permite obetener una lista de las películas que los usuarios de la comunidad han criticado.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Si la comunidad no existe.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{Lista de películas criticadas por los usuarios de la comunidad.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{listaPelículasIncluidas = listarPelículasIncluidas(idComunidad)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Permite obtener una lista de películas que han sido incluidas en el sistema por miembros de la comunidad.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Si la comunidad no existe.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{Lista de Películas incluidas en el sistema por los miembros de la comunidad.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{3}{p{10cm}|}{}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{} \\
 \hline
 \end{tabular}
 \end{table}
