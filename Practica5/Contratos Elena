@@ -1,0 +1,288 @@
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{3}{p{8cm}|}{altaRegistro(correo, clave)}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{8cm}|}{Da de alta a un usuario en la base de datos. El usuario inicia sesión, mediante su correo y la clave, como Usuario Registrado.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{:DeCine} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{8cm}|}{- Si el correo propuesto ya está registrado.
+
+- Si la clave no cumple los requisitos de seguridad.
+
+- Si el nombre de Usuario Registrado ya existe.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{8cm}|}{No existe otro objeto Usuario Registrado con el mismo nombre de usuario y/o correo.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{8cm}|}{- Fue creado un objeto de la clase Usuario Registrado, que se identifica con NombreUsuario.} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{3}{p{8cm}|}{identificarse(correo, clave)}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{8cm}|}{Identifica si una persona es un Usuario Registrado en el sistema a través de su correo y la clave.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{:DeCine} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{8cm}|}{- Si el correo no está registrado.
+
+- Si la clave no concuerda con el correo.
+} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{8cm}|}{Debe existir el correo y la clave.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{8cm}|}{- Fue creada una conexión del Usuario Registrado, identificado con el correo y su clave.
+
+- Fueron permitidos los privilegios que el Sistema tiene para los Usuarios Registrados en esa conexión.
+} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{3}{p{8cm}|}{bajaRegistro(idUsuario)}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{8cm}|}{Da de baja al Usuario Registrado para pasar a ser un usuario normal. Cierra sesión como Usuario Registrado mediante su correo y la clave.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{:DeCine} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{8cm}|}{- Si el usuario identificado por idUsuario no existe.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{8cm}|}{Debe existir el usuario que se va a dar de baja en la base de datos.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{8cm}|}{- Fue eliminado un objeto de la clase Usuario Registrado.} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{3}{p{8cm}|}{infoUsuario = consultarUsuario(idUsuario)}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{8cm}|}{Muestra la información determinada sobre el usuario indicado mediante idUsuario.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{:DeCine} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{8cm}|}{-	Si el usuario identificado por idUsuario no existe.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{8cm}|}{Se almacenará en la variable infoUsuario la información acerca del usuario idUsuario.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{8cm}|}{- Debe existir el usuario identificado por idUsuario que se va a consultar.
+
+- Se deben tener permisos para mostrar la información sobre un usuario, ya que este método lo usa el administrador del sistema.
+} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{8cm}|}{-Fue creada la variable infoUsuario y se almacena aquí la información del usuario elegido.} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{3}{p{8cm}|}{bajaUsuario(idUsuario)}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{8cm}|}{Da de baja a un usuario en la base de datos mediante su idUsuario} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{:DeCine} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{8cm}|}{-	Si el usuario identificado por idUsuario no existe.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{8cm}|}{Debe existir el usuario que se va a borrar en la base de datos.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{8cm}|}{- Fue eliminado el objeto que corresponde con el idUsuario del sistema.
+
+- Fueron eliminados todos los enlaces que tiene este usuario con el resto de objetos.
+} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{3}{p{8cm}|}{cambiarAVIP(idUsuario)}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{8cm}|}{Cambia al usuario identificado por idUsuario de ser un usuarioRegistrado a ser un usuarioVIP. Le da a dicho usuario los permisos correspondientes que tienen los VIP, como la posibilidad de criticar una película.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{:DeCine} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{8cm}|}{- Si el usuario identificado por idUsuario no existe.
+
+- Si el usuario identificado por idUsuario ya es VIP.
+} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{8cm}|}{Debe existir el usuario que se ha elegido para ser VIP.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{8cm}|}{- Fue creado un objeto de la clase UsuarioVIP.} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{3}{p{8cm}|}{nuevaPelícula(infoPelícula)}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{8cm}|}{Crea una nueva Película en el sistema, inicializando su estado y asignando los atributos más importantes.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{:DeCine} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{8cm}|}{- Si la información de la Película existe ya en el sistema.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{8cm}|}{No existe otro objeto Película con el contenido de los atributos exactamente igual.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{8cm}|}{- Fue creado un objeto de la clase Película (identificado por nombre, año y reparto).} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{3}{p{8cm}|}{nuevoDirectorPelícula(idPelícula, idDirector)}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{8cm}|}{Asigna un nuevo director a una Película en el sistema.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{:DeCine} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{8cm}|}{- Si la película identificada por idPelícula no existe.
+- Si el director identificado por idDirector no existe.
+} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{8cm}|}{No existe otro objeto Director con el mismo nombre de la misma Película.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{8cm}|}{- Fue creado un objeto Director de la clase Película (identificado por nombre del director ligado a película).} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{3}{p{8cm}|}{nuevoActorPelícula(idPelícula, idActor)}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{8cm}|}{Asigna un nuevo actor a una Película en el sistema.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{:DeCine} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{8cm}|}{-	Si la película identificada por idPelícula no existe.
+-	Si el actor identificado por idActor no existe.
+} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{8cm}|}{No existe otro objeto actor con el mismo nombre de la misma película.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{8cm}|}{- Fue creado un objeto Actor de la clase Película (identificado por nombre del actor ligado a película).} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{3}{p{8cm}|}{nuevoGéneroPelícula(idPelícula, idGénero)}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{8cm}|}{Asigna un nuevo género a una Película en el sistema.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{:DeCine} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{8cm}|}{- Si la película identificada por idPelícula no existe.
+- Si el género identificado por idGénero no existe.
+} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{8cm}|}{No existe otro objeto género con el mismo nombre de la misma película.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{8cm}|}{Fue creado un objeto género de la clase Película (identificado por nombre del género ligado a película).} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{3}{p{8cm}|}{infoPelícula = consultarPelícula(idPelícula)}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{8cm}|}{Muestra la información de la película identificada por idPelícula.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{8cm}|}{:DeCine} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{8cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{8cm}|}{-	Si la película identificada por idPelícula no existe.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{8cm}|}{Se almacenará en la variable infoPelícula la información acerca de la película idPelícula.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{8cm}|}{Debe existir la película identificada por idPelícula.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{8cm}|}{- Fue creada la variable infoPelícula y se almacena aquí la información de la película elegida.} \\
+\hline
+\end{tabular}
+\end{table}
