@@ -286,3 +286,270 @@
 \hline
 \end{tabular}
 \end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{IntroducirPerfil( nick,  pasword)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Introduces tu login y tu pasword para acceder a tu zona web.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item No existe un perfil con ese nombre y esa contraseña
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{true si existe el usuario y false si no existe} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{el nick y el pasword debe coincidir con alguno de la base de datos de la página web} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{resultadoConsulta=ConsultaPerfil( nickUsuario)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Consulta la información de un usuario registrado.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item No existe información sobre este perfil
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{La salida muestra la información del usuario registrado.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{MarcarPeliculaFavorita()}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{marcar y añadir un enlace a la lista de películasfavoritas .} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item La pelicula ya fue marcada
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{se creo un enlace dentro de lista de películasfavoritas que lleva a la película marcada} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{AceptarAlmasGemlas(posiblesalmasgemelas)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Aceptar a algunos usuarios registrados que tengas las gustos parecidos .} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\Esa alma gemela ya fue aceptada
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{se creo un  dentro de lista de almasgemelas que lleva a la información de ese usuario} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{resultadoConsulta=ConsultaAlmaGemela( nickUsuario)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Consulta la lista de alma gemelas de un usuario registrado.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item No tienes almas gemelas
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{La salida muestra la lista de almas gemelas de un user.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{Debe de haber al menos una alma gemela aceptada} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{AñadirListaPelicula( nickUsuario, pasword,  nombrelista)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Crear una lista para un usuario.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Ese nombre ya existe
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{Se creo una lista para el usuario registrado} \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{resultadoConsulta=ConsultaListaPeliculas( nickUsuario, lista)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Consulta una de las listas de películas.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item El usuario no tiene una lista con ese nombre
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{La salida muestra la lista de películas que tiene esa lista.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{AñadirListaPelicula( nickUsuario, pasword,  nombrelista)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Se elimina una lista para del usuario.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item La lista no existe
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{Se destruye una lista del usuario registrado} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{AñadirListaPelicula(nickUsuario,pasword, nombrelista, Pelicula)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Añadir a una determinada lista un enlace con la pelicula.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item La pelicula ya se añadió
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{Se crea un enlace en lista determida de la pelicula} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{posiblesalmasgemelas=EncontrarAlmaGemela( nickUsuario)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Encuentra posibles almas gemelas para un usuario.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item No has valorado las suficientes películas \\
+\item No se encuentran posibles almas gemelas \\
+\item No puedes añadir mas almas gemelas
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{La salida muestra posibles almas gemelas para un usuario registrado.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{el usuario debe de haber valorado al menos unas 10 películas para encontrar a posbles almas gemelas} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\end{tabular}
+\end{table}
