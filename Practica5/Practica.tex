@@ -306,10 +306,333 @@
 \hline
 \end{tabular}
 \end{table}
-
+\pagebreak
 \section{Contratos. Rafael Nogales Vaquero}
+\clearpage
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{nuevoTrailer(idPelícula, video, enlaceAVideo, comentario)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Añadir los trailers de las peliculas.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item No existe la película en el sistema.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{El sistema debe tener la película.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{Se añade el trailer a la pelicula \textit{idPelícula}} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{nuevoPremio(idPelícula, idPremio)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Añadir los premios de las peliculas.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item No existe la película en el sistema.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{El sistema debe tener la película.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{Se añade el premio a la pelicula \textit{idPelícula}} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{nuevoEstreno(idPelícula, infoEstreno)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Establecer la fecha de estreno de las peliculas. Y la lista de cines donde se va a proyectar.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item No existe la película en el sistema.
+\item La pelicula ya se ha estrenado.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{El sistema debe tener la película.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{Se añade la fecha de estreno a la pelicula \textit{idPelícula}} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{nuevaDistribución(idPelícula, soporte, fecha, calidad, descripción, tipo, precio, web)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Añadir los soportes en los que la película va a distribuirse (VHS, DVD, BD...) así como los detalles de cada soporte} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item No existe la película en el sistema.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{El sistema debe tener la película.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{Se añade el soporte con todos sus detalles a la pelicula \textit{idPelícula}} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{aceptarAlta(idPelícula)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Añadir una película sugerida por un usuario VIP} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Ya existe la película en el sistema.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{El sistema no puede tener la película.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{Se añade la pelicula \textit{idPelícula}} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{nuevoCine(nombre, ciudad, provincia)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Añadir un cine al sistema} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Ya existe un cine en la misma Ciudad con el mismo nombre.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{El sistema no puede tener un cine con el mismo nombre en la misma ciudad.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{Se añade un cine a la lista de cines} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{nuevaSala(idCine, número, nombre)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Añadir una sala a un cine del sistema} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{Lo ideal es que en cada cine no haya dos salas con el mismo numero (ni que se repitan los nombres) de forma que se pueda usar el numero de sala como clave primaria de la BD en el caso de que se requiera de una BD.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item Ya existe una sala en ese cine con el con el mismo numero. \textit{(Ver notas)}
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{El cine no puede tener una sala con el mismo número.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{Se añade una sala a un cine.} \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{bajaCine(idCine)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Borrar un cine del sistema} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item No existe ese cine.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{El cine tiene que existir.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{Se elimina un cine del sistema.} \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{nuevaSesión(idpelícula, idCine, idSala, díaSemana, hora}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Establecer una nueva sesión para una película en un cine} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item No existe ese cine.
+\item No existe esa película.
+\item Ya hay otra película en esa misma sala en ese mismo momento (o al menos se solapan horarios).
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{El cine y la pelicula tienen que existir, además los horarios de esta sesión no pueden solaparse con las de otras peliculas que se proyecten en la misma sala.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{Se establece una sesion de una pelicula en un cine.} \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{bajaSesión(idSesión)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Borrar una sesion de una pelicula en un cine.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item No existe esa sesion.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{La sesión tiene que existir.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{Se elimina la sesion del sistema.} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{infoSesiones = consultaProgramación(idPelícula, criteriosConsulta)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Buscar en que cines que cumplen los \textit{criteriosConsulta} se proyecta la pelicula \textit{idPelícula}.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{\begin{itemize}
+\item No existe esa película.
+\item No hay programada una fecha de estreno para dicha película.
+\end{itemize}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{Devuelve la informacion de las sesiones que verifican la query.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{La película tiene que existir.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{2}{|p{3cm}|}{Nombre} & \multicolumn{4}{p{10cm}|}{\textbf{resultadoBúsqueda = búsquedaPelícula(criterioBúsqueda)}}\\
+\hline
+\multicolumn{2}{|p{3cm}|}{Responsabilidad} & \multicolumn{4}{p{10cm}|}{Permite a los usuarios buscar películas que cumplen los \textit{criteriosBúsqueda}} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Tipo} & \multicolumn{4}{p{10cm}|}{Sistema(DeCine)} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Referencias Cruzadas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Notas} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Excepciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Salida} & \multicolumn{4}{p{10cm}|}{Devuelve una lista de películas que verifican la query.} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Precondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\multicolumn{2}{|p{3cm}|}{Poscondiciones} & \multicolumn{4}{p{10cm}|}{} \\
+\hline
+\end{tabular}
+\end{table}
+
+
+
 
 \clearpage
+\pagebreak
 \section{Contratos. Jose Ramón Trillo Vilchez}
 
 \begin{table}[h]
@@ -605,6 +928,7 @@
 \end{table}
 
 \clearpage
+\pagebreak
 \section{Contratos. Lothar Soto Palma}
 \begin{table}[h]
 \begin{tabular}{|l|l|l|l|l|l|}
